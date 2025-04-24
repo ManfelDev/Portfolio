@@ -1,0 +1,57 @@
+{% extends 'portfolio/base.html' %}
+
+{% block main %}
+<style>
+    .tech-section {
+        margin-bottom: 15px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+
+    .tech-section h3 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .tech-image {
+        width: 100%;
+        max-width: 500px;
+        height: 350px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        margin: 5px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .tech-image img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+</style>
+
+{% for tecnologia in tecnologias %}
+<section class="tech-section">
+    <h2>{{ tecnologia.nome }}</h2>
+
+    <div class="tech-image">
+        <img src="{{ tecnologia.logotipo.url }}" alt="{{ tecnologia.nome }}">
+    </div>
+
+    <p><a href="{{ tecnologia.link }}" target="_blank">Link</a></p>
+    <p>{{ tecnologia.descricao }}</p>
+
+    {% if tecnologia.projetos.all %}
+        <h3>Used In</h3>
+        {% for projeto in tecnologia.projetos.all %}
+            <p><strong>{{ projeto.titulo }}</strong></p>
+        {% endfor %}
+    {% endif %}
+</section>
+{% endfor %}
+{% endblock %}

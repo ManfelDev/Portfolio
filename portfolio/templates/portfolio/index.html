@@ -1,0 +1,40 @@
+{% extends 'portfolio/base.html' %}
+
+{% block main %}
+    <style>
+
+        .landing-wrapper h2 {
+            font-size: 3em;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .landing-wrapper p {
+            font-size: 1.1em;
+            max-width: 800px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .landing-wrapper a {
+            display: inline-block;
+            background-color: #2b2b2b;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .landing-wrapper a:hover {
+            background-color: #bb86fc;
+        }
+    </style>
+
+    <div class="landing-wrapper">
+        <h2>🎮 Hi! I'm Rafael José. 🎮</h2>
+            <p>Gameplay Programmer passionate about designing responsive systems that feel great to play.</p>
+            <p>Here you’ll find a collection of projects that reflect my journey in game development — focused on crafting AI, UI/UX systems, and gameplay logic that puts the player first.</p>
+        <a href="{% url 'portfolio:projetos' %}">See My Projects</a>
+    </div>
+{% endblock %}

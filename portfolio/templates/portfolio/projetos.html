@@ -1,0 +1,214 @@
+{% extends 'portfolio/base.html' %}
+
+{% block main %}
+<style>
+    .project-section {
+        margin-bottom: 40px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 60px;
+    }
+
+    .project-title {
+        text-align: center;
+        font-size: 2.8em;
+        margin-bottom: 10px;
+    }
+
+    .project-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .project-video-wrapper {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 10px auto;
+    }
+
+    .project-video {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    .project-section p.project-description {
+        max-width: 900px;
+        margin: 0 auto 10px auto;
+        text-align: center;
+    }
+
+    .project-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .project-gallery div {
+        flex: 1 1 calc(50% - 20px);
+        max-width: 400px;
+    }
+
+    .project-gallery img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .project-gallery p {
+        text-align: center;
+        font-size: 0.85em;
+        margin-top: 5px;
+    }
+
+    .project-section p {
+        text-align: left;
+    }
+
+    .project-section h2 {
+        margin-bottom: 10px;
+    }
+
+    .project-section h3 {
+        font-size: 1.6em;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    .project-final-box {
+        border: 2px solid #bb86fc;
+        border-radius: 10px;
+        padding: 20px;
+        background-color: #1f1f1f;
+        color: #e0e0e0;
+    }
+
+    .project-final-box ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .project-final-box li {
+        margin-bottom: 14px;
+        display: flex;
+        align-items: center;
+    }
+
+    .tech-logo {
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin-right: 12px;
+        flex-shrink: 0;
+    }
+
+    .tech-logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .tech-text {
+        line-height: 1.4;
+    }
+</style>
+
+{% for projeto in projetos %}
+<section class="project-section">
+
+    <h2 class="project-title">{{ projeto.titulo }}</h2>
+
+    {% if projeto.link_itch or projeto.link_video or projeto.link_github %}
+        <div class="project-links">
+            <strong>Links:</strong>
+            {% if projeto.link_itch %}
+                <a href="{{ projeto.link_itch }}" target="_blank">Itch.io</a>
+            {% endif %}
+            {% if projeto.link_github %}
+                {% if projeto.link_itch or projeto.link_video %} | {% endif %}
+                <a href="{{ projeto.link_github }}" target="_blank">GitHub</a>
+            {% endif %}
+        </div>
+    {% endif %}
+
+    {% if projeto.link_video %}
+        {% with projeto.link_video|cut:"https://www.youtube.com/watch?v=" as video_id %}
+            <div class="project-video-wrapper">
+                <iframe width="720" height="405"
+                        src="https://www.youtube.com/embed/{{ video_id }}"
+                        title="Trailer"
+                        frameborder="0"
+                        allowfullscreen
+                        class="project-video">
+                </iframe>
+            </div>
+        {% endwith %}
+    {% endif %}
+
+    <p class="project-description">{{ projeto.descricao }}</p>
+
+    {% if projeto.imagens.all %}
+        <div class="project-gallery">
+            {% for imagem in projeto.imagens.all %}
+                <div>
+                    <img src="{{ imagem.imagem.url }}" alt="{{ imagem.legenda }}">
+                    {% if imagem.legenda %}
+                        <p>{{ imagem.legenda }}</p>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    <div style="margin-bottom: 20px;">
+        <h3>Core Concepts</h3>
+        <p>{{ projeto.conceitos_aplicados }}</p>
+    </div>
+
+    {% if projeto.aspetos_tecnicos %}
+        <div style="margin-bottom: 20px;">
+            <h3>Technical Aspects</h3>
+            <p>{{ projeto.aspetos_tecnicos }}</p>
+        </div>
+    {% endif %}
+
+    <div class="project-final-box">
+        <p><strong>Course:</strong> "{{ projeto.disciplina.nome }}" – Universidade Lusófona ({{ projeto.disciplina.ano }}º year, {{ projeto.disciplina.semestre }}º semester)</p>
+
+        {% if projeto.ficha_tecnica %}
+            <p><strong>Platform:</strong> {{ projeto.ficha_tecnica.plataforma }}</p>
+            <p><strong>Development Duration:</strong> {{ projeto.ficha_tecnica.duracao_desenvolvimento }}</p>
+            <p><strong>Team Size:</strong> {{ projeto.ficha_tecnica.equipa }}</p>
+        {% endif %}
+
+        {% if projeto.tecnologias.all %}
+            <div style="margin-top: 15px;">
+                <p><strong>Technologies Used:</strong></p>
+                <ul>
+                    {% for tech in projeto.tecnologias.all %}
+                        <li>
+                            {% if tech.logotipo %}
+                                <div class="tech-logo">
+                                    <img src="{{ tech.logotipo.url }}" alt="{{ tech.nome }}">
+                                </div>
+                            {% endif %}
+                            <span class="tech-text"><strong>{{ tech.nome }}</strong> – {{ tech.descricao }}</span>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+    </div>
+</section>
+{% empty %}
+    <p>No projects available at this time.</p>
+{% endfor %}
+{% endblock %}

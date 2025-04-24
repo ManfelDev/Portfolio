@@ -1,0 +1,3434 @@
+[
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2025-03-27T10:30:27.041Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "Rafael José: 22 anos",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2025-03-27T11:21:11.369Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "Os Azeitona",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2025-03-27T11:21:37.289Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "Os Azeitona",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Ano de cria\\u00e7\\u00e3o\", \"Descri\\u00e7\\u00e3o\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2025-03-27T11:22:37.018Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "1",
+        "object_repr": "Reconstrução",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2025-03-27T11:24:11.253Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "As notícias",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2025-03-27T11:41:06.792Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "2",
+        "object_repr": "Teste",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2025-03-27T11:41:08.522Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Anda comigo ver os aviões",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2025-03-27T11:51:31.562Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "3",
+        "object_repr": "Rafael José",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2025-03-27T17:41:18.761Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "1",
+        "object_repr": "Reconstrução",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2025-03-27T17:41:18.791Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "2",
+        "object_repr": "Teste",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2025-03-27T17:41:26.987Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "Os Azeitona",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2025-03-27T17:44:01.245Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "2",
+        "object_repr": "Queen",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2025-03-27T17:45:05.840Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "3",
+        "object_repr": "Bohemian Rhapsody",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2025-03-27T17:46:16.832Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "4",
+        "object_repr": "We Will Rock You",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2025-03-27T17:50:45.735Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "5",
+        "object_repr": "Another One Bites The Dust",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2025-03-27T17:51:04.633Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "5",
+        "object_repr": "Another One Bites The Dust",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Letra\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2025-03-27T17:51:24.216Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "4",
+        "object_repr": "We Will Rock You",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Letra\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2025-03-27T18:00:57.837Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "3",
+        "object_repr": "Teste",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2025-03-27T18:01:03.314Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "3",
+        "object_repr": "Teste",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2025-03-27T18:36:03.558Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "3",
+        "object_repr": "Pink Floyd",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2025-03-27T18:36:59.743Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "4",
+        "object_repr": "The Wall",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2025-03-27T18:37:58.065Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "6",
+        "object_repr": "Another Brick in the Wall, Pt.2",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2025-03-27T18:38:43.058Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "7",
+        "object_repr": "Mother",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2025-03-29T16:49:28.666Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "Autor object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2025-03-29T16:50:11.572Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "Autor object (1)",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2025-03-29T16:58:45.649Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "1",
+        "object_repr": "How Django can handle 100 millions of requests per day (Nicolae Godina (Nicolae Godina))",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2025-03-29T17:02:07.028Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "1",
+        "object_repr": "Manu mathew",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2025-03-29T17:02:46.100Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "2",
+        "object_repr": "Fhdahmod",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2025-03-29T17:05:21.520Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "How Django can handle 100 millions of requests per day (Nicolae Godina): Rating(5)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2025-03-29T17:05:30.698Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "2",
+        "object_repr": "How Django can handle 100 millions of requests per day (Nicolae Godina): Rating(4)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2025-03-29T17:06:59.458Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "2",
+        "object_repr": "Aditya Bhuyan",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2025-03-29T17:08:12.055Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "Why Django Stands Out Among Web Development Frameworks (Aditya Bhuyan)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2025-03-29T17:08:56.783Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "3",
+        "object_repr": "Why Django Stands Out Among Web Development Frameworks (Aditya Bhuyan): Rating(4)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2025-03-29T17:11:24.086Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "3",
+        "object_repr": "Haider Alaamery",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2025-03-29T17:12:14.094Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "3",
+        "object_repr": "10 Django Model Field Tricks You Probably Didn’t Know About (Haider Alaamery)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2025-03-29T17:13:01.305Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "3",
+        "object_repr": "Ewho Ruth",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2025-03-29T17:13:53.274Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "4",
+        "object_repr": "Wahevey",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2025-03-29T17:14:10.467Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "4",
+        "object_repr": "10 Django Model Field Tricks You Probably Didn’t Know About (Haider Alaamery): Rating(4)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2025-03-29T17:43:03.015Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "2",
+        "object_repr": "Fhdahmod (How Django can handle 100 millions of requests per day (Nicolae Godina))",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Comentario pai\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2025-04-03T17:13:21.661Z",
+        "user": 3,
+        "content_type": 4,
+        "object_id": "1",
+        "object_repr": "a22202078",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2025-04-03T17:33:14.775Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "3",
+        "object_repr": "Pink Floyd",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Foto da banda\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2025-04-03T17:33:22.092Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "2",
+        "object_repr": "Queen",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Foto da banda\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2025-04-03T17:35:14.862Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "3",
+        "object_repr": "Bohemian Rhapsody",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Capa\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2025-04-03T17:35:21.621Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "4",
+        "object_repr": "The Wall",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Capa\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2025-04-03T17:35:31.262Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "2",
+        "object_repr": "Aditya Bhuyan",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Foto de Perfil\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+        "action_time": "2025-04-03T17:35:34.668Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "3",
+        "object_repr": "Haider Alaamery",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+        "action_time": "2025-04-03T17:35:37.476Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "Nicolae Godina",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+        "action_time": "2025-04-03T17:35:43.795Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "1",
+        "object_repr": "How Django can handle 100 millions of requests per day (Nicolae Godina)",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+        "action_time": "2025-04-03T17:35:46.217Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "Why Django Stands Out Among Web Development Frameworks (Aditya Bhuyan)",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+        "action_time": "2025-04-03T17:35:48.047Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "3",
+        "object_repr": "10 Django Model Field Tricks You Probably Didn’t Know About (Haider Alaamery)",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+        "action_time": "2025-04-03T17:37:18.137Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "2",
+        "object_repr": "Aditya Bhuyan",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+        "action_time": "2025-04-03T17:37:20.250Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "3",
+        "object_repr": "Haider Alaamery",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+        "action_time": "2025-04-03T17:37:22.056Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "Nicolae Godina",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+        "action_time": "2025-04-03T17:37:46.485Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "2",
+        "object_repr": "Aditya Bhuyan",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Foto de Perfil\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+        "action_time": "2025-04-03T17:37:54.409Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "3",
+        "object_repr": "Haider Alaamery",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Foto de Perfil\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+        "action_time": "2025-04-03T17:38:02.251Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "Nicolae Godina",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Foto de Perfil\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+        "action_time": "2025-04-03T17:38:15.834Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "1",
+        "object_repr": "How Django can handle 100 millions of requests per day (Nicolae Godina)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Imagem capa\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+        "action_time": "2025-04-03T17:38:27.125Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "Why Django Stands Out Among Web Development Frameworks (Aditya Bhuyan)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Imagem capa\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+        "action_time": "2025-04-03T17:38:37.640Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "3",
+        "object_repr": "10 Django Model Field Tricks You Probably Didn’t Know About (Haider Alaamery)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Imagem capa\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+        "action_time": "2025-04-03T17:49:47.552Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "3",
+        "object_repr": "Pink Floyd",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Nacionalidade\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+        "action_time": "2025-04-03T17:49:58.996Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "2",
+        "object_repr": "Queen",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Nacionalidade\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+        "action_time": "2025-04-03T17:50:13.675Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "3",
+        "object_repr": "Pink Floyd",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+        "action_time": "2025-04-03T17:52:39.950Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "5",
+        "object_repr": "Another One Bites The Dust",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Dura\\u00e7\\u00e3o\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+        "action_time": "2025-04-03T17:53:09.418Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "6",
+        "object_repr": "Another Brick in the Wall, Pt.2",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Dura\\u00e7\\u00e3o\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+        "action_time": "2025-04-03T17:53:20.470Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "7",
+        "object_repr": "Mother",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Dura\\u00e7\\u00e3o\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+        "action_time": "2025-04-03T17:53:33.697Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "4",
+        "object_repr": "We Will Rock You",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Dura\\u00e7\\u00e3o\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+        "action_time": "2025-04-03T20:11:17.566Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "116",
+        "object_repr": "AC/DC",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+        "action_time": "2025-04-03T20:11:17.595Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "106",
+        "object_repr": "AC/DC",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+        "action_time": "2025-04-03T20:11:17.621Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "118",
+        "object_repr": "Foo Fighters",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+        "action_time": "2025-04-03T20:11:17.649Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "108",
+        "object_repr": "Foo Fighters",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+        "action_time": "2025-04-03T20:11:17.669Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "123",
+        "object_repr": "Green Day",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 73,
+    "fields": {
+        "action_time": "2025-04-03T20:11:17.689Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "113",
+        "object_repr": "Green Day",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 74,
+    "fields": {
+        "action_time": "2025-04-03T20:11:17.709Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "119",
+        "object_repr": "Led Zeppelin",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 75,
+    "fields": {
+        "action_time": "2025-04-03T20:11:17.732Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "109",
+        "object_repr": "Led Zeppelin",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 76,
+    "fields": {
+        "action_time": "2025-04-03T20:11:17.752Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "115",
+        "object_repr": "Nirvana",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 77,
+    "fields": {
+        "action_time": "2025-04-03T20:11:17.772Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "105",
+        "object_repr": "Nirvana",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 78,
+    "fields": {
+        "action_time": "2025-04-03T20:11:17.792Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "121",
+        "object_repr": "Pink Floyd",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 79,
+    "fields": {
+        "action_time": "2025-04-03T20:11:17.812Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "111",
+        "object_repr": "Pink Floyd",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 80,
+    "fields": {
+        "action_time": "2025-04-03T20:11:17.833Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "114",
+        "object_repr": "Queen",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 81,
+    "fields": {
+        "action_time": "2025-04-03T20:11:17.853Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "104",
+        "object_repr": "Queen",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 82,
+    "fields": {
+        "action_time": "2025-04-03T20:11:17.873Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "120",
+        "object_repr": "Red Hot Chili Peppers",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 83,
+    "fields": {
+        "action_time": "2025-04-03T20:11:17.895Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "110",
+        "object_repr": "Red Hot Chili Peppers",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 84,
+    "fields": {
+        "action_time": "2025-04-03T20:11:17.915Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "122",
+        "object_repr": "The Beatles",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 85,
+    "fields": {
+        "action_time": "2025-04-03T20:11:17.939Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "112",
+        "object_repr": "The Beatles",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 86,
+    "fields": {
+        "action_time": "2025-04-03T20:11:17.960Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "117",
+        "object_repr": "The Rolling Stones",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 87,
+    "fields": {
+        "action_time": "2025-04-03T20:11:17.981Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "107",
+        "object_repr": "The Rolling Stones",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 88,
+    "fields": {
+        "action_time": "2025-04-03T20:13:13.548Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "136",
+        "object_repr": "AC/DC",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 89,
+    "fields": {
+        "action_time": "2025-04-03T20:13:13.579Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "126",
+        "object_repr": "AC/DC",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 90,
+    "fields": {
+        "action_time": "2025-04-03T20:13:13.602Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "138",
+        "object_repr": "Foo Fighters",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 91,
+    "fields": {
+        "action_time": "2025-04-03T20:13:13.633Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "128",
+        "object_repr": "Foo Fighters",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 92,
+    "fields": {
+        "action_time": "2025-04-03T20:13:13.659Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "143",
+        "object_repr": "Green Day",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 93,
+    "fields": {
+        "action_time": "2025-04-03T20:13:13.681Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "133",
+        "object_repr": "Green Day",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 94,
+    "fields": {
+        "action_time": "2025-04-03T20:13:13.713Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "139",
+        "object_repr": "Led Zeppelin",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 95,
+    "fields": {
+        "action_time": "2025-04-03T20:13:13.742Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "129",
+        "object_repr": "Led Zeppelin",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 96,
+    "fields": {
+        "action_time": "2025-04-03T20:13:13.772Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "135",
+        "object_repr": "Nirvana",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 97,
+    "fields": {
+        "action_time": "2025-04-03T20:13:13.802Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "125",
+        "object_repr": "Nirvana",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 98,
+    "fields": {
+        "action_time": "2025-04-03T20:13:13.827Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "141",
+        "object_repr": "Pink Floyd",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 99,
+    "fields": {
+        "action_time": "2025-04-03T20:13:13.849Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "131",
+        "object_repr": "Pink Floyd",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 100,
+    "fields": {
+        "action_time": "2025-04-03T20:13:13.873Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "134",
+        "object_repr": "Queen",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 101,
+    "fields": {
+        "action_time": "2025-04-03T20:13:13.901Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "124",
+        "object_repr": "Queen",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 102,
+    "fields": {
+        "action_time": "2025-04-03T20:13:13.929Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "140",
+        "object_repr": "Red Hot Chili Peppers",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 103,
+    "fields": {
+        "action_time": "2025-04-03T20:13:13.959Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "130",
+        "object_repr": "Red Hot Chili Peppers",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 104,
+    "fields": {
+        "action_time": "2025-04-03T20:13:13.991Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "142",
+        "object_repr": "The Beatles",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 105,
+    "fields": {
+        "action_time": "2025-04-03T20:13:14.015Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "132",
+        "object_repr": "The Beatles",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 106,
+    "fields": {
+        "action_time": "2025-04-03T20:13:14.035Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "137",
+        "object_repr": "The Rolling Stones",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 107,
+    "fields": {
+        "action_time": "2025-04-03T20:13:14.062Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "127",
+        "object_repr": "The Rolling Stones",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 108,
+    "fields": {
+        "action_time": "2025-04-21T23:54:09.185Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "1",
+        "object_repr": "Teste",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 109,
+    "fields": {
+        "action_time": "2025-04-21T23:54:21.097Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "2",
+        "object_repr": "Teste 2",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 110,
+    "fields": {
+        "action_time": "2025-04-21T23:55:42.146Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "1",
+        "object_repr": "Teste",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 111,
+    "fields": {
+        "action_time": "2025-04-21T23:55:42.173Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "2",
+        "object_repr": "Teste 2",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 112,
+    "fields": {
+        "action_time": "2025-04-23T15:45:44.735Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "3",
+        "object_repr": "Phil Lopes",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 113,
+    "fields": {
+        "action_time": "2025-04-23T15:45:54.563Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "4",
+        "object_repr": "Fábio Dias",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 114,
+    "fields": {
+        "action_time": "2025-04-23T15:46:08.305Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "5",
+        "object_repr": "Filipe Pinto",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 115,
+    "fields": {
+        "action_time": "2025-04-23T15:46:56.481Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "1",
+        "object_repr": "Realidades Expandidas XR",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 116,
+    "fields": {
+        "action_time": "2025-04-23T15:58:42.690Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "1",
+        "object_repr": "Unity",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 117,
+    "fields": {
+        "action_time": "2025-04-23T16:00:47.620Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "2",
+        "object_repr": "XR Interaction Toolkit",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 118,
+    "fields": {
+        "action_time": "2025-04-23T16:02:56.245Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "3",
+        "object_repr": "Meta Quest",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 119,
+    "fields": {
+        "action_time": "2025-04-23T16:04:26.555Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "4",
+        "object_repr": "C#",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 120,
+    "fields": {
+        "action_time": "2025-04-23T16:04:41.838Z",
+        "user": 1,
+        "content_type": 20,
+        "object_id": "1",
+        "object_repr": "Company Roulette",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"imagem projeto\", \"object\": \"Imagem de Company Roulette\"}}, {\"added\": {\"name\": \"imagem projeto\", \"object\": \"Imagem de Company Roulette\"}}, {\"added\": {\"name\": \"imagem projeto\", \"object\": \"Imagem de Company Roulette\"}}, {\"added\": {\"name\": \"ficha tecnica\", \"object\": \"Ficha T\\u00e9cnica de Company Roulette\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 121,
+    "fields": {
+        "action_time": "2025-04-23T16:05:01.323Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "1",
+        "object_repr": "Unity",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Logotipo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 122,
+    "fields": {
+        "action_time": "2025-04-23T16:10:58.020Z",
+        "user": 1,
+        "content_type": 17,
+        "object_id": "6",
+        "object_repr": "Nélio Codices",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 123,
+    "fields": {
+        "action_time": "2025-04-23T16:11:01.397Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "2",
+        "object_repr": "Desenvolvimento de Jogos Digitais II",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 124,
+    "fields": {
+        "action_time": "2025-04-23T16:13:31.170Z",
+        "user": 1,
+        "content_type": 20,
+        "object_id": "1",
+        "object_repr": "Company Roulette",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 125,
+    "fields": {
+        "action_time": "2025-04-23T16:14:28.274Z",
+        "user": 1,
+        "content_type": 20,
+        "object_id": "2",
+        "object_repr": "Magical Intern",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"imagem projeto\", \"object\": \"Imagem de Magical Intern\"}}, {\"added\": {\"name\": \"imagem projeto\", \"object\": \"Imagem de Magical Intern\"}}, {\"added\": {\"name\": \"imagem projeto\", \"object\": \"Imagem de Magical Intern\"}}, {\"added\": {\"name\": \"ficha tecnica\", \"object\": \"Ficha T\\u00e9cnica de Magical Intern\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 126,
+    "fields": {
+        "action_time": "2025-04-23T16:15:05.688Z",
+        "user": 1,
+        "content_type": 16,
+        "object_id": "2",
+        "object_repr": "Desenvolvimento de Jogos Digitais II",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Semestre\"]}}]"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 4,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 4,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 4,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 4,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 5,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 5,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 5,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 5,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 6,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 6,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 6,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 6,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add pessoas",
+        "content_type": 7,
+        "codename": "add_pessoas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change pessoas",
+        "content_type": 7,
+        "codename": "change_pessoas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete pessoas",
+        "content_type": 7,
+        "codename": "delete_pessoas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view pessoas",
+        "content_type": 7,
+        "codename": "view_pessoas"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add pessoa",
+        "content_type": 8,
+        "codename": "add_pessoa"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change pessoa",
+        "content_type": 8,
+        "codename": "change_pessoa"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete pessoa",
+        "content_type": 8,
+        "codename": "delete_pessoa"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view pessoa",
+        "content_type": 8,
+        "codename": "view_pessoa"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add musica",
+        "content_type": 9,
+        "codename": "add_musica"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change musica",
+        "content_type": 9,
+        "codename": "change_musica"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete musica",
+        "content_type": 9,
+        "codename": "delete_musica"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view musica",
+        "content_type": 9,
+        "codename": "view_musica"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add banda",
+        "content_type": 10,
+        "codename": "add_banda"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change banda",
+        "content_type": 10,
+        "codename": "change_banda"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete banda",
+        "content_type": 10,
+        "codename": "delete_banda"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view banda",
+        "content_type": 10,
+        "codename": "view_banda"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+        "name": "Can add album",
+        "content_type": 11,
+        "codename": "add_album"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+        "name": "Can change album",
+        "content_type": 11,
+        "codename": "change_album"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+        "name": "Can delete album",
+        "content_type": 11,
+        "codename": "delete_album"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+        "name": "Can view album",
+        "content_type": 11,
+        "codename": "view_album"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+        "name": "Can add post",
+        "content_type": 12,
+        "codename": "add_post"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+        "name": "Can change post",
+        "content_type": 12,
+        "codename": "change_post"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+        "name": "Can delete post",
+        "content_type": 12,
+        "codename": "delete_post"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+        "name": "Can view post",
+        "content_type": 12,
+        "codename": "view_post"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+        "name": "Can add rating",
+        "content_type": 13,
+        "codename": "add_rating"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+        "name": "Can change rating",
+        "content_type": 13,
+        "codename": "change_rating"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+        "name": "Can delete rating",
+        "content_type": 13,
+        "codename": "delete_rating"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+        "name": "Can view rating",
+        "content_type": 13,
+        "codename": "view_rating"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+        "name": "Can add autor",
+        "content_type": 14,
+        "codename": "add_autor"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+        "name": "Can change autor",
+        "content_type": 14,
+        "codename": "change_autor"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+        "name": "Can delete autor",
+        "content_type": 14,
+        "codename": "delete_autor"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+        "name": "Can view autor",
+        "content_type": 14,
+        "codename": "view_autor"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 57,
+    "fields": {
+        "name": "Can add comentario",
+        "content_type": 15,
+        "codename": "add_comentario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 58,
+    "fields": {
+        "name": "Can change comentario",
+        "content_type": 15,
+        "codename": "change_comentario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 59,
+    "fields": {
+        "name": "Can delete comentario",
+        "content_type": 15,
+        "codename": "delete_comentario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 60,
+    "fields": {
+        "name": "Can view comentario",
+        "content_type": 15,
+        "codename": "view_comentario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 61,
+    "fields": {
+        "name": "Can add disciplina",
+        "content_type": 16,
+        "codename": "add_disciplina"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 62,
+    "fields": {
+        "name": "Can change disciplina",
+        "content_type": 16,
+        "codename": "change_disciplina"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 63,
+    "fields": {
+        "name": "Can delete disciplina",
+        "content_type": 16,
+        "codename": "delete_disciplina"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 64,
+    "fields": {
+        "name": "Can view disciplina",
+        "content_type": 16,
+        "codename": "view_disciplina"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 65,
+    "fields": {
+        "name": "Can add docente",
+        "content_type": 17,
+        "codename": "add_docente"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 66,
+    "fields": {
+        "name": "Can change docente",
+        "content_type": 17,
+        "codename": "change_docente"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 67,
+    "fields": {
+        "name": "Can delete docente",
+        "content_type": 17,
+        "codename": "delete_docente"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 68,
+    "fields": {
+        "name": "Can view docente",
+        "content_type": 17,
+        "codename": "view_docente"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 69,
+    "fields": {
+        "name": "Can add ficha tecnica",
+        "content_type": 18,
+        "codename": "add_fichatecnica"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 70,
+    "fields": {
+        "name": "Can change ficha tecnica",
+        "content_type": 18,
+        "codename": "change_fichatecnica"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 71,
+    "fields": {
+        "name": "Can delete ficha tecnica",
+        "content_type": 18,
+        "codename": "delete_fichatecnica"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 72,
+    "fields": {
+        "name": "Can view ficha tecnica",
+        "content_type": 18,
+        "codename": "view_fichatecnica"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 73,
+    "fields": {
+        "name": "Can add tecnologia",
+        "content_type": 19,
+        "codename": "add_tecnologia"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 74,
+    "fields": {
+        "name": "Can change tecnologia",
+        "content_type": 19,
+        "codename": "change_tecnologia"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 75,
+    "fields": {
+        "name": "Can delete tecnologia",
+        "content_type": 19,
+        "codename": "delete_tecnologia"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 76,
+    "fields": {
+        "name": "Can view tecnologia",
+        "content_type": 19,
+        "codename": "view_tecnologia"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 77,
+    "fields": {
+        "name": "Can add projeto",
+        "content_type": 20,
+        "codename": "add_projeto"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 78,
+    "fields": {
+        "name": "Can change projeto",
+        "content_type": 20,
+        "codename": "change_projeto"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 79,
+    "fields": {
+        "name": "Can delete projeto",
+        "content_type": 20,
+        "codename": "delete_projeto"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 80,
+    "fields": {
+        "name": "Can view projeto",
+        "content_type": 20,
+        "codename": "view_projeto"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 81,
+    "fields": {
+        "name": "Can add imagem projeto",
+        "content_type": 21,
+        "codename": "add_imagemprojeto"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 82,
+    "fields": {
+        "name": "Can change imagem projeto",
+        "content_type": 21,
+        "codename": "change_imagemprojeto"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 83,
+    "fields": {
+        "name": "Can delete imagem projeto",
+        "content_type": 21,
+        "codename": "delete_imagemprojeto"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 84,
+    "fields": {
+        "name": "Can view imagem projeto",
+        "content_type": 21,
+        "codename": "view_imagemprojeto"
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$24LkCiiifKkloyT29NWUUN$5vx77uz0DHuHdN5vM/1OVNhxn0XPItvHDPXXhb/555k=",
+        "last_login": "2025-04-21T23:39:25.616Z",
+        "is_superuser": true,
+        "username": "a22202078",
+        "first_name": "",
+        "last_name": "",
+        "email": "rafaeldavidjose.dev@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2025-03-27T10:13:29.857Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$046H0Oj3yKv1ENRIzBTNP4$Zbs+7mrFl+drDC+X8ESI1xpoeUxwqHNJCFl8fCV8bE8=",
+        "last_login": "2025-04-07T14:27:40.698Z",
+        "is_superuser": true,
+        "username": "professor",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2025-03-29T17:52:01.386Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "pessoas",
+        "model": "pessoas"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "pessoas",
+        "model": "pessoa"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "bandas",
+        "model": "musica"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "bandas",
+        "model": "banda"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+        "app_label": "bandas",
+        "model": "album"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+        "app_label": "artigos",
+        "model": "post"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+        "app_label": "artigos",
+        "model": "rating"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+        "app_label": "artigos",
+        "model": "autor"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 15,
+    "fields": {
+        "app_label": "artigos",
+        "model": "comentario"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 16,
+    "fields": {
+        "app_label": "portfolio",
+        "model": "disciplina"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 17,
+    "fields": {
+        "app_label": "portfolio",
+        "model": "docente"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 18,
+    "fields": {
+        "app_label": "portfolio",
+        "model": "fichatecnica"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 19,
+    "fields": {
+        "app_label": "portfolio",
+        "model": "tecnologia"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 20,
+    "fields": {
+        "app_label": "portfolio",
+        "model": "projeto"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 21,
+    "fields": {
+        "app_label": "portfolio",
+        "model": "imagemprojeto"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "09i90bo2lp1bzbh0urccmwlfydsaggse",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSG8BZfu-w1kmAGpGkhKuzL-uzbpQrf3nHNfLMK21riNvMSZ2IVpdvrdEuAjtx3QHdqtc-xtXebEd4UfdPCpU35eD_fvoMKo3zp5R84oAoVJBgGlaAHGgkdplTeqWBIopdVnJNSyZI9gJLriA6aQib0_7og4hQ:1u100G:8gdGZ6aGxXkDCQc-UTHqWON_FOk4UvQU1au21mAWYYk",
+        "expire_date": "2025-04-19T09:39:52.330Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "2rff38365fi9jm1n9hu5xa3vfp314i5s",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQRO_iGln-hcSU9Jwhsme9OIBsKU4qxN1JpBRQzrw38xZjWJc8ri3N40TiIrQ4_XYx4JnKDugRyr1K1LLMU5S7Ig_a5K1Sel0P9-8gh5a3Nc6GFQMdGB6WVfTGgoBeGed04l73WwANYKss2U4NKerBBUqeOy0-XxRDOOs:1u26ns:6jYqNepmhuG0ybLq-40QAO4hp6ssAh7KJ5rwA0Cayls",
+        "expire_date": "2025-04-22T11:07:40.808Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "7i0mcuk0tj4p3q729txdjhsz4qs3y1la",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQRO_iGln-hcSU9Jwhsme9OIBsKU4qxN1JpBRQzrw38xZjWJc8ri3N40TiIrQ4_XYx4JnKDugRyr1K1LLMU5S7Ig_a5K1Sel0P9-8gh5a3Nc6GFQMdGB6WVfTGgoBeGed04l73WwANYKss2U4NKerBBUqeOy0-XxRDOOs:1u70jV:Bu3ucrMktaZbjCRd93iK1glvoBUv44M8e7Mm40uF9aM",
+        "expire_date": "2025-05-05T23:39:25.638Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "gbsv8uqrlou8x704wau8efcjvxotuswa",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSG8BZfu-w1kmAGpGkhKuzL-uzbpQrf3nHNfLMK21riNvMSZ2IVpdvrdEuAjtx3QHdqtc-xtXebEd4UfdPCpU35eD_fvoMKo3zp5R84oAoVJBgGlaAHGgkdplTeqWBIopdVnJNSyZI9gJLriA6aQib0_7og4hQ:1u1nRs:SQH-JUSADGfuOQlmVOWncHckm3V_oX3DyRQ_laz976E",
+        "expire_date": "2025-04-21T14:27:40.718Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "yxinnxlzwai83fscbvkdtwxq0q09pd1e",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQRO_iGln-hcSU9Jwhsme9OIBsKU4qxN1JpBRQzrw38xZjWJc8ri3N40TiIrQ4_XYx4JnKDugRyr1K1LLMU5S7Ig_a5K1Sel0P9-8gh5a3Nc6GFQMdGB6WVfTGgoBeGed04l73WwANYKss2U4NKerBBUqeOy0-XxRDOOs:1u0O8E:bGrfBdbC6D4U97wOpPKBlsWV69cYKuusK57T_F6dIq0",
+        "expire_date": "2025-04-17T17:13:34.919Z"
+    }
+},
+{
+    "model": "pessoas.pessoa",
+    "pk": 1,
+    "fields": {
+        "nome": "Rafael José",
+        "idade": 22
+    }
+},
+{
+    "model": "bandas.banda",
+    "pk": 154,
+    "fields": {
+        "nome": "Queen",
+        "foto_banda": "",
+        "ano_criacao": 1970,
+        "nacionalidade": "Britânica",
+        "descricao": "Banda de rock formada em Londres, conhecida por suas composições épicas e performances teatrais."
+    }
+},
+{
+    "model": "bandas.banda",
+    "pk": 155,
+    "fields": {
+        "nome": "Nirvana",
+        "foto_banda": "",
+        "ano_criacao": 1987,
+        "nacionalidade": "Estadunidense",
+        "descricao": "Pioneira do grunge, a banda marcou os anos 90 com seu som cru e introspectivo."
+    }
+},
+{
+    "model": "bandas.banda",
+    "pk": 156,
+    "fields": {
+        "nome": "AC/DC",
+        "foto_banda": "",
+        "ano_criacao": 1973,
+        "nacionalidade": "Australiana",
+        "descricao": "Banda de hard rock formada por irmãos escoceses na Austrália, com riffs marcantes e muita energia."
+    }
+},
+{
+    "model": "bandas.banda",
+    "pk": 157,
+    "fields": {
+        "nome": "The Rolling Stones",
+        "foto_banda": "",
+        "ano_criacao": 1962,
+        "nacionalidade": "Britânica",
+        "descricao": "Um dos maiores ícones do rock'n'roll, conhecidos por sua longevidade e atitude rebelde."
+    }
+},
+{
+    "model": "bandas.banda",
+    "pk": 158,
+    "fields": {
+        "nome": "Foo Fighters",
+        "foto_banda": "",
+        "ano_criacao": 1994,
+        "nacionalidade": "Estadunidense",
+        "descricao": "Banda fundada por Dave Grohl após o fim do Nirvana, com forte presença no rock alternativo."
+    }
+},
+{
+    "model": "bandas.banda",
+    "pk": 159,
+    "fields": {
+        "nome": "Led Zeppelin",
+        "foto_banda": "",
+        "ano_criacao": 1968,
+        "nacionalidade": "Britânica",
+        "descricao": "Lendária banda britânica, precursora do heavy metal e do hard rock."
+    }
+},
+{
+    "model": "bandas.banda",
+    "pk": 160,
+    "fields": {
+        "nome": "Red Hot Chili Peppers",
+        "foto_banda": "",
+        "ano_criacao": 1983,
+        "nacionalidade": "Estadunidense",
+        "descricao": "Mistura de rock, funk e punk, famosa por suas performances energéticas."
+    }
+},
+{
+    "model": "bandas.banda",
+    "pk": 161,
+    "fields": {
+        "nome": "Pink Floyd",
+        "foto_banda": "",
+        "ano_criacao": 1965,
+        "nacionalidade": "Britânica",
+        "descricao": "Reconhecida por suas composições progressivas e conceituais."
+    }
+},
+{
+    "model": "bandas.banda",
+    "pk": 162,
+    "fields": {
+        "nome": "The Beatles",
+        "foto_banda": "",
+        "ano_criacao": 1960,
+        "nacionalidade": "Britânica",
+        "descricao": "Possivelmente a banda mais influente da história da música."
+    }
+},
+{
+    "model": "bandas.banda",
+    "pk": 163,
+    "fields": {
+        "nome": "Green Day",
+        "foto_banda": "",
+        "ano_criacao": 1987,
+        "nacionalidade": "Estadunidense",
+        "descricao": "Banda de punk rock californiana que estourou com o álbum *Dookie*."
+    }
+},
+{
+    "model": "bandas.album",
+    "pk": 105,
+    "fields": {
+        "nome": "A Night at the Opera",
+        "banda": 154,
+        "capa": "",
+        "ano_lancamento": 1975
+    }
+},
+{
+    "model": "bandas.album",
+    "pk": 106,
+    "fields": {
+        "nome": "Nevermind",
+        "banda": 155,
+        "capa": "",
+        "ano_lancamento": 1991
+    }
+},
+{
+    "model": "bandas.album",
+    "pk": 107,
+    "fields": {
+        "nome": "Back in Black",
+        "banda": 156,
+        "capa": "",
+        "ano_lancamento": 1980
+    }
+},
+{
+    "model": "bandas.album",
+    "pk": 108,
+    "fields": {
+        "nome": "Let It Bleed",
+        "banda": 157,
+        "capa": "",
+        "ano_lancamento": 1969
+    }
+},
+{
+    "model": "bandas.album",
+    "pk": 109,
+    "fields": {
+        "nome": "Wasting Light",
+        "banda": 158,
+        "capa": "",
+        "ano_lancamento": 2011
+    }
+},
+{
+    "model": "bandas.album",
+    "pk": 110,
+    "fields": {
+        "nome": "Led Zeppelin IV",
+        "banda": 159,
+        "capa": "",
+        "ano_lancamento": 1971
+    }
+},
+{
+    "model": "bandas.album",
+    "pk": 111,
+    "fields": {
+        "nome": "Californication",
+        "banda": 160,
+        "capa": "",
+        "ano_lancamento": 1999
+    }
+},
+{
+    "model": "bandas.album",
+    "pk": 112,
+    "fields": {
+        "nome": "The Dark Side of the Moon",
+        "banda": 161,
+        "capa": "",
+        "ano_lancamento": 1973
+    }
+},
+{
+    "model": "bandas.album",
+    "pk": 113,
+    "fields": {
+        "nome": "Abbey Road",
+        "banda": 162,
+        "capa": "",
+        "ano_lancamento": 1969
+    }
+},
+{
+    "model": "bandas.album",
+    "pk": 114,
+    "fields": {
+        "nome": "American Idiot",
+        "banda": 163,
+        "capa": "",
+        "ano_lancamento": 2004
+    }
+},
+{
+    "model": "bandas.musica",
+    "pk": 73,
+    "fields": {
+        "nome": "Bohemian Rhapsody",
+        "banda": 154,
+        "album": 105,
+        "duracao": "00:05:55",
+        "link": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ",
+        "letra": "Is this the real life? Is this just fantasy?... (letra completa)"
+    }
+},
+{
+    "model": "bandas.musica",
+    "pk": 74,
+    "fields": {
+        "nome": "Love of My Life",
+        "banda": 154,
+        "album": 105,
+        "duracao": "00:03:39",
+        "link": "https://www.youtube.com/watch?v=sUJkCXE4sAA",
+        "letra": "Love of my life, you've hurt me... (letra completa)"
+    }
+},
+{
+    "model": "bandas.musica",
+    "pk": 75,
+    "fields": {
+        "nome": "Smells Like Teen Spirit",
+        "banda": 155,
+        "album": 106,
+        "duracao": "00:05:01",
+        "link": "https://www.youtube.com/watch?v=hTWKbfoikeg",
+        "letra": "Load up on guns, bring your friends... (letra completa)"
+    }
+},
+{
+    "model": "bandas.musica",
+    "pk": 76,
+    "fields": {
+        "nome": "Come as You Are",
+        "banda": 155,
+        "album": 106,
+        "duracao": "00:03:39",
+        "link": "https://www.youtube.com/watch?v=vabnZ9-ex7o",
+        "letra": "Come as you are, as you were... (letra completa)"
+    }
+},
+{
+    "model": "bandas.musica",
+    "pk": 77,
+    "fields": {
+        "nome": "Back in Black",
+        "banda": 156,
+        "album": 107,
+        "duracao": "00:04:15",
+        "link": "https://www.youtube.com/watch?v=pAgnJDJN4VA",
+        "letra": "Back in black, I hit the sack... (letra completa)"
+    }
+},
+{
+    "model": "bandas.musica",
+    "pk": 78,
+    "fields": {
+        "nome": "Hells Bells",
+        "banda": 156,
+        "album": 107,
+        "duracao": "00:05:12",
+        "link": "https://www.youtube.com/watch?v=etAIpkdhU9Q",
+        "letra": "I'm a rolling thunder, a pouring rain... (letra completa)"
+    }
+},
+{
+    "model": "bandas.musica",
+    "pk": 79,
+    "fields": {
+        "nome": "Gimme Shelter",
+        "banda": 157,
+        "album": 108,
+        "duracao": "00:04:30",
+        "link": "https://www.youtube.com/watch?v=R3rnxQBizoU",
+        "letra": "Oh, a storm is threat'ning my very life today... (letra completa)"
+    }
+},
+{
+    "model": "bandas.musica",
+    "pk": 80,
+    "fields": {
+        "nome": "You Can't Always Get What You Want",
+        "banda": 157,
+        "album": 108,
+        "duracao": "00:07:28",
+        "link": "https://www.youtube.com/watch?v=krxU5Y9lCS8",
+        "letra": "I saw her today at the reception... (letra completa)"
+    }
+},
+{
+    "model": "bandas.musica",
+    "pk": 81,
+    "fields": {
+        "nome": "Rope",
+        "banda": 158,
+        "album": 109,
+        "duracao": "00:04:19",
+        "link": "https://www.youtube.com/watch?v=kbpqZT_56Ns",
+        "letra": "This indecision got me climbing up the wall... (letra completa)"
+    }
+},
+{
+    "model": "bandas.musica",
+    "pk": 82,
+    "fields": {
+        "nome": "Walk",
+        "banda": 158,
+        "album": 109,
+        "duracao": "00:04:16",
+        "link": "https://www.youtube.com/watch?v=4PkcfQtibmU",
+        "letra": "A million miles away, your signal in the distance... (letra completa)"
+    }
+},
+{
+    "model": "bandas.musica",
+    "pk": 83,
+    "fields": {
+        "nome": "Stairway to Heaven",
+        "banda": 159,
+        "album": 110,
+        "duracao": "00:08:02",
+        "link": "https://www.youtube.com/watch?v=QkF3oxziUI4",
+        "letra": "There's a lady who's sure all that glitters is gold... (letra completa)"
+    }
+},
+{
+    "model": "bandas.musica",
+    "pk": 84,
+    "fields": {
+        "nome": "Black Dog",
+        "banda": 159,
+        "album": 110,
+        "duracao": "00:04:55",
+        "link": "https://www.youtube.com/watch?v=6tlSx0jkuLM",
+        "letra": "Hey, hey mama, said the way you move... (letra completa)"
+    }
+},
+{
+    "model": "bandas.musica",
+    "pk": 85,
+    "fields": {
+        "nome": "Scar Tissue",
+        "banda": 160,
+        "album": 111,
+        "duracao": "00:03:35",
+        "link": "https://www.youtube.com/watch?v=mzJj5-lubeM",
+        "letra": "Scar tissue that I wish you saw... (letra completa)"
+    }
+},
+{
+    "model": "bandas.musica",
+    "pk": 86,
+    "fields": {
+        "nome": "Californication",
+        "banda": 160,
+        "album": 111,
+        "duracao": "00:05:21",
+        "link": "https://www.youtube.com/watch?v=YlUKcNNmywk",
+        "letra": "Psychic spies from China try to steal your mind's elation... (letra completa)"
+    }
+},
+{
+    "model": "bandas.musica",
+    "pk": 87,
+    "fields": {
+        "nome": "Time",
+        "banda": 161,
+        "album": 112,
+        "duracao": "00:06:53",
+        "link": "https://www.youtube.com/watch?v=JwYX52BP2Sk",
+        "letra": "Ticking away the moments that make up a dull day... (letra completa)"
+    }
+},
+{
+    "model": "bandas.musica",
+    "pk": 88,
+    "fields": {
+        "nome": "Money",
+        "banda": 161,
+        "album": 112,
+        "duracao": "00:06:22",
+        "link": "https://www.youtube.com/watch?v=-0kcet4aPpQ",
+        "letra": "Money, get away. Get a good job with more pay and you're okay... (letra completa)"
+    }
+},
+{
+    "model": "bandas.musica",
+    "pk": 89,
+    "fields": {
+        "nome": "Come Together",
+        "banda": 162,
+        "album": 113,
+        "duracao": "00:04:20",
+        "link": "https://www.youtube.com/watch?v=45cYwDMibGo",
+        "letra": "Here come old flat top, he come grooving up slowly... (letra completa)"
+    }
+},
+{
+    "model": "bandas.musica",
+    "pk": 90,
+    "fields": {
+        "nome": "Something",
+        "banda": 162,
+        "album": 113,
+        "duracao": "00:03:03",
+        "link": "https://www.youtube.com/watch?v=UelDrZ1aFeY",
+        "letra": "Something in the way she moves... (letra completa)"
+    }
+},
+{
+    "model": "bandas.musica",
+    "pk": 91,
+    "fields": {
+        "nome": "American Idiot",
+        "banda": 163,
+        "album": 114,
+        "duracao": "00:02:54",
+        "link": "https://www.youtube.com/watch?v=Ee_uujKuJMI",
+        "letra": "Don't wanna be an American idiot... (letra completa)"
+    }
+},
+{
+    "model": "bandas.musica",
+    "pk": 92,
+    "fields": {
+        "nome": "Boulevard of Broken Dreams",
+        "banda": 163,
+        "album": 114,
+        "duracao": "00:04:20",
+        "link": "https://www.youtube.com/watch?v=Soa3gO7tL-c",
+        "letra": "I walk a lonely road, the only one that I have ever known... (letra completa)"
+    }
+},
+{
+    "model": "artigos.autor",
+    "pk": 1,
+    "fields": {
+        "nome": "Nicolae Godina",
+        "foto_perfil": "artigos/fotosperfil/2_SbYKLNC80OP-l1DOX0Nomg.jpg",
+        "url_perfil": "https://medium.com/@nicolaegodina"
+    }
+},
+{
+    "model": "artigos.autor",
+    "pk": 2,
+    "fields": {
+        "nome": "Aditya Bhuyan",
+        "foto_perfil": "artigos/fotosperfil/1_WQHBwgIEEAyNaIv3OIPjIg_YCfWFhU.jpg",
+        "url_perfil": "https://aditya-sunjava.medium.com/"
+    }
+},
+{
+    "model": "artigos.autor",
+    "pk": 3,
+    "fields": {
+        "nome": "Haider Alaamery",
+        "foto_perfil": "artigos/fotosperfil/1_JF-tc5tO_oML1KH7Q5_oAQ.jpg",
+        "url_perfil": "https://halaamery.medium.com/"
+    }
+},
+{
+    "model": "artigos.post",
+    "pk": 1,
+    "fields": {
+        "autor": 1,
+        "titulo": "How Django can handle 100 millions of requests per day",
+        "conteudo": "Today I’ll write about Django, my loyal framework-companion for the last five years. This one helped me succeed in developing high-load solutions used by millions of users to date.\r\n\r\nIt is true, Python is not a very “fast” programming language, however, it’s simple, loved, and convenient. In terms of execution performance, it might not be as fast as Go or NodeJs, but this becomes irrelevant when considering modern infrastructures and modular development.\r\n\r\nAs I’ve been boiling in the Django kettle for years now, I’ve reached several insightful conclusions I am about to share with you.\r\n\r\n\r\n#1. Infrastructure Matters\r\nDespite application performance, the first thing you need is an infrastructure that allows you to scale when the app reaches its limit and Django can scale-up easily if you follow these rules:\r\n\r\nSplit your application into microservices, but consider the volume of data transferred between them, especially since data redundancy and frequent synchronizations lead to increased server resources and communication, thus a higher cost;\r\nUse Docker containers to place your code in production;\r\nDocker Containerisation is not enough, hence use Kubernetes to orchestrate containers and control the number of replicas;\r\nDesign your infrastructure with maintenance in mind: a proper one will allow you to upgrade or downgrade server resources without experiencing service downtime;\r\nCollect and monitor metrics that matter: number of requests per microservice and each endpoint, CPU usage on each pod, CPU usage on k8s nodes, inbound and outbound traffic, CPU at database and storage usage — this will allow your to spot and fix issues on the fly, stepping-up from traditional troubleshooting to proactive maintenance;\r\n#2. The database is your most likely culprit\r\nWhatever speed you gain via code execution you’ll most probably lose at the database end. Particularly, the response speed of an endpoint depends on how fast your database query is processed, hence, you should check on the following:\r\n\r\nChoose your DB engine wisely and focus on its performance — my preference is PostgreSQL because it has earned a strong reputation for its proven architecture, reliability, data integrity and performance;\r\nWhen deploying your data layer focus primarily on fast storage and CPU. You need to choose the best option of IOPS and the number of available CPU cores — no question about it;\r\nCheck that you have created all the necessary Indexes for all queries;\r\nRemember that too many indexes are bad — delete unused or redundant ones: each created index might increase search metrics on that column (SELECT) but will reduce write speeds (INSERT, UPDATE). Django can create some indexes that repeat themself, hence, you have to check and delete them.\r\n#3. Enable debug logs in Django ORM\r\nDuring development, it’s paramount to keep an eye on what query generates the ORM and the response speed. When you create an endpoint you have to make sure that its response is under 100ms, this is why you have to make sure queries are executed up to 20ms.\r\n\r\nTo activate the logs and see how long each query runs make use of these lines of code within settings.py:\r\n\r\nLOGGING = {\r\n    'version': 1,\r\n    'handlers': {\r\n        'console': {\r\n            'class': 'logging.StreamHandler',\r\n        },\r\n    },\r\n    'loggers': {\r\n        'django.db.backends': {\r\n            'level': 'DEBUG',\r\n        },\r\n    },\r\n    'root': {\r\n        'handlers': ['console'],\r\n    }\r\n}\r\nAnd after the restart, you should see the queries in the following format:\r\n\r\n\r\nThe first number is the query execution time\r\nIf your choice is PostgreSQL, I recommend using pghero, a performance dashboard to view Slow queries and Duplicated indexes.\r\n\r\n#4. Enable persistent connections\r\nIf the application needs to process a large number of requests, enable maintaining persistent connections to the database. Django closes the connection by default at the end of each request and persistent connections avoid overloading the database for each request.\r\n\r\nThese connections are controlled by the CONN_MAX_AGE param, a metric that defines the maximum lifetime of a connection. Set a suitable value depending on your request volume at the applications’ end. I usually limit it to expire in 5 minutes. Make sure that the database is not limited in matters of concurrent connection figure, usually, the default number of connections is 100 — which is not nearly enough in most high-load scenarios.\r\n\r\nFor instance, in one of my production projects, after adjusting this parameter from 0 to 300 seconds, I reduced the DB load in half. I made use of AWS Aurora DB engine with db.r5.8xlarge, downgrading it to db.r5.4xlarge to cut on expenses while maintaining performance.\r\n\r\n\r\n#5. Deactivate unused apps and middlewares\r\nBy default, the framework has several applications activated that can be useless, especially if you use Django as a REST API. Consider Sessions and Messages in this scenario — these are useless and would just waste resources and reduce processing speeds. The fewer middleware you have declared, the faster each request will be processed.\r\n\r\n\r\n#6. Use bulk query\r\nUse bulk queries to efficiently query large data sets and reduce the number of database requests. Django ORM can perform several inserts or update operations in a single SQL query.\r\n\r\nIf you’re planning on inserting more than 5000 objects, specify batch_size. Large batches will also decrease processing times and high memory consumption in Python, hence, you must find an optimal number of elements depending on the size of the object.\r\n\r\n\r\nExample of bulk query in Django\r\n#7. Reduce the number of select operations with select_related\r\nIf you have two related models and you need to pull specific properties from both of them, pre-select required entities via JOIN.\r\n\r\nHere’s an unfortunate example that illustrates generating 11 useless queries to the database:\r\n\r\n\r\nOn the other hand, here’s the right way o do it, generating only one query:\r\n\r\n\r\nUsing select_related depends on table sizes since ORM generates the JOIN SQL query. To achieve optimization the WHERE condition must return a small number of rows.\r\n\r\n#8. Reduce data transfer between your data and application layer\r\nFocus on essential information from the database. Selecting unnecessary columns increases response times from the database resulting in data transfer costs.\r\n\r\nDjango ORM has a .only() QuerySet function for selecting specific fields or you can call .defer() to tell Django not to retrieve some fields from the database:\r\n\r\n\r\nSelecting a name and an email from a table\r\n#9. Reduce data transfer between your API and clients\r\nSimilar to a strict selection from the database, it’s paramount to return to essential information from the API. Because JSON is not the most efficient way to send data, you need to reduce the size by excluding fields that are not used by the app client.\r\n\r\nAs an illustration: the size of an answer from a specific endpoint is 1Kb, but if it is called 1 million times a day, 1 GB of data will be transferred daily, which means 30 GB per month, a pretty steep price to pay in resource usage.\r\n\r\nConclusion\r\nOf course, it is easy to blame Django or Python, however, as my colleagues say: “Don’t blame the piano — blame the pianist”.\r\n\r\nWhen developing a high-load project on Django, every little count. Issues thinner than a hair, multiplied by millions result in a pretty furry situation and you’ll have to do all the trimming.\r\n\r\nAny extra milliseconds multiplied by millions of requests can lead to excessive consumption of resources. If the application is optimized or properly built, increasing hardware resources does not save the day.\r\n\r\nTake a page from Instagram, Pinterest or Disqus — they started with Django as it and took it to the next level. Sure, it might not be the same framework anymore, however, when commonsense is applied at the core, there are only fruits to bear.\r\n\r\nWrite code efficiently, reuse, use bulk, monitor, measure and optimize. Will get back to you soon.",
+        "imagem_capa": "artigos/capas/1_p-RezfDQItiBwn1Lp19x6A.webp",
+        "data": "2020-07-21",
+        "url_post": "https://medium.com/ebs-integrator/how-django-can-handle-100-millions-of-requests-per-day-c4cdbf48639e"
+    }
+},
+{
+    "model": "artigos.post",
+    "pk": 2,
+    "fields": {
+        "autor": 2,
+        "titulo": "Why Django Stands Out Among Web Development Frameworks",
+        "conteudo": "Django is a high-level Python web framework that has gained immense popularity among developers, standing shoulder to shoulder with alternatives like Ruby on Rails, Laravel, and Node.js. This article explores the reasons behind Django’s popularity, its unique features, and how it compares with its competitors, particularly regarding boilerplate code.\r\n\r\n1. Introduction to Django\r\nDjango was created to simplify the development of complex web applications. With a focus on reusability, rapid development, and the “don’t repeat yourself” (DRY) principle, it allows developers to build applications quickly while maintaining high-quality code. The framework has a rich ecosystem, making it easier for developers to extend functionality without reinventing the wheel.\r\n\r\n2. Features That Make Django a Top Choice\r\n2.1 Batteries-Included Philosophy\r\nOne of Django’s most attractive features is its “batteries-included” philosophy. This means that the framework comes with a variety of built-in tools and features, reducing the need for third-party libraries. From user authentication and content administration to site maps and RSS feeds, Django provides everything you need to get started.\r\n\r\nExample: Admin Interface\r\nThe Django admin interface is a powerful feature that allows developers to manage application data with minimal coding. Once you define your models, the admin panel is generated automatically, saving valuable development time.\r\n\r\n2.2 Robust Security Features\r\nSecurity is a critical aspect of web development. Django takes this seriously by offering built-in protections against common vulnerabilities such as:\r\n\r\nCross-Site Scripting (XSS)\r\nCross-Site Request Forgery (CSRF)\r\nSQL Injection\r\nClickjacking\r\nBy default, Django helps developers implement security best practices, making it easier to create secure applications.\r\n\r\n2.3 Scalability and Performance\r\nDjango is designed to handle high-traffic applications and can scale effectively as your user base grows. Its architecture allows for the distribution of workloads across multiple servers, making it suitable for enterprise-level applications.\r\n\r\n2.4 Strong Community and Ecosystem\r\nDjango boasts a large and active community that contributes to a rich ecosystem of packages and plugins. This makes it easier for developers to find solutions to common problems and integrate additional features.\r\n\r\n2.5 Excellent Documentation\r\nDjango’s documentation is comprehensive and well-organized. Whether you’re a beginner or an experienced developer, you’ll find detailed guides, tutorials, and API references to assist you. This emphasis on documentation significantly reduces the learning curve.\r\n\r\n2.6 Readable and Maintainable Code\r\nPython is known for its clean and readable syntax, and Django leverages this to promote maintainable code. Developers can easily understand the logic, making collaboration smoother and facilitating onboarding for new team members.\r\n\r\n2.7 Versatile ORM\r\nDjango’s Object-Relational Mapping (ORM) system allows developers to interact with databases using Python code instead of raw SQL. This feature enhances productivity by enabling easier database management while maintaining data integrity.\r\n\r\n3. Comparing Django with Alternatives\r\n3.1 Django vs. Ruby on Rails\r\nRuby on Rails is another popular web framework that shares similarities with Django, particularly its convention-over-configuration philosophy. However, Django’s batteries-included approach often results in less boilerplate code compared to Rails.\r\n\r\nLearning Curve: Django’s documentation is generally considered more accessible for beginners than Rails.\r\nCommunity: While both frameworks have strong communities, Django’s Python base allows for broader applications beyond web development, such as data science and machine learning.\r\n3.2 Django vs. Laravel\r\nLaravel is a PHP framework known for its elegant syntax and powerful features. While both frameworks excel in ease of use, Django’s extensive built-in functionalities mean developers can achieve more with less external dependencies.\r\n\r\nPerformance: Django’s performance can be superior in certain scenarios, especially when handling large datasets, thanks to its efficient ORM and caching capabilities.\r\nSecurity: Both frameworks emphasize security, but Django’s built-in features make it easier to implement security measures right out of the box.\r\n3.3 Django vs. Node.js\r\nNode.js is a runtime environment that allows for server-side JavaScript execution. While it provides greater flexibility and control, Django’s structure and built-in features can lead to faster development times for web applications.\r\n\r\nUse Cases: Node.js is ideal for real-time applications and microservices, while Django is often favored for traditional web applications that require a robust backend.\r\nDevelopment Speed: Django generally offers quicker development times for full-featured applications due to its extensive libraries and built-in tools.\r\n4. Boilerplate Code: A Key Comparison Point\r\n4.1 Understanding Boilerplate Code\r\nBoilerplate code refers to sections of code that are repeated in multiple places with little to no alteration. In web development, minimizing boilerplate code can significantly improve efficiency and reduce potential errors.\r\n\r\n4.2 Django’s Approach to Boilerplate Code\r\nDjango aims to minimize boilerplate code through its design philosophy. For example, the automatic generation of admin interfaces and its powerful ORM allow developers to achieve complex functionality with minimal coding.\r\n\r\nExample: Model Definition\r\nIn Django, defining a model can be as simple as:\r\n\r\nfrom django.db import models\r\nclass Book(models.Model):\r\n    title = models.CharField(max_length=200)\r\n    author = models.CharField(max_length=100)\r\n    published_date = models.DateField()\r\nThis concise model definition automatically generates a database schema, making it straightforward to manage data.\r\n\r\n4.3 Comparison with Other Frameworks\r\nRuby on Rails: Rails also emphasizes DRY principles but often requires more configuration than Django, leading to increased boilerplate in some cases.\r\nLaravel: While Laravel provides elegant syntax, it may still require more setup for features like authentication compared to Django’s out-of-the-box capabilities.\r\nNode.js: With Node.js, developers often need to write more boilerplate code to set up routing and middleware, particularly when not using a framework like Express.\r\n5. Conclusion\r\nDjango’s combination of built-in features, security measures, scalability, and ease of use makes it a popular choice for developers. Its approach to minimizing boilerplate code allows for rapid development without sacrificing quality. While alternatives like Ruby on Rails, Laravel, and Node.js each have their strengths, Django’s unique advantages make it a strong contender in the web development landscape.",
+        "imagem_capa": "artigos/capas/0_rREa1GndXjcxMAsQ.jpg",
+        "data": "2024-10-13",
+        "url_post": "https://aditya-sunjava.medium.com/why-django-stands-out-among-web-development-frameworks-c7a2bfbdeee3"
+    }
+},
+{
+    "model": "artigos.post",
+    "pk": 3,
+    "fields": {
+        "autor": 3,
+        "titulo": "10 Django Model Field Tricks You Probably Didn’t Know About",
+        "conteudo": "1. Customizing Field Validation with clean()\r\nDid you know you can add custom validation logic to specific fields using the clean() method?\r\n\r\nfrom django.db import models\r\nfrom django.core.exceptions import ValidationError\r\n\r\nclass Product(models.Model):\r\n    name = models.CharField(max_length=100)\r\n    price = models.DecimalField(max_digits=10, decimal_places=2)\r\ndef clean(self):\r\n    if self.price <= 0:\r\n       raise ValidationError(\"Price must be greater than zero.\")\r\nUse clean() in your save logic or forms to ensure that invalid data never sneaks into your database.\r\n\r\n2. Conditional Default Values\r\nSometimes, you need default values to change dynamically based on some condition.\r\n\r\nfrom django.utils.timezone import now\r\n\r\nclass Event(models.Model):\r\n    name = models.CharField(max_length=100)\r\n    start_date = models.DateTimeField(default=now)\r\n    end_date = models.DateTimeField(default=lambda: now() + timedelta(days=7))\r\nThis is great for timestamps or automatically generating default future dates.\r\n\r\n3. Unique Constraints for Multi-Field Uniqueness\r\nReplace the deprecated unique_together with UniqueConstraint for better control.\r\n\r\nfrom django.db import models\r\n\r\nclass Membership(models.Model):\r\n    user = models.ForeignKey('auth.User', on_delete=models.CASCADE)\r\n    group = models.ForeignKey('Group', on_delete=models.CASCADE)\r\n\r\n    class Meta:\r\n        constraints = [\r\n            models.UniqueConstraint(fields=['user', 'group'], name='unique_membership')\r\n        ]\r\nThis ensures no user can be added to the same group twice.\r\n\r\n4. Using choices with Enums\r\nDjango’s choices make fields cleaner, especially with Enums.\r\n\r\nfrom django.db import models\r\n\r\nclass Status(models.TextChoices):\r\n    PENDING = 'P', 'Pending'\r\n    APPROVED = 'A', 'Approved'\r\n    REJECTED = 'R', 'Rejected'\r\n\r\nclass Request(models.Model):\r\n    status = models.CharField(max_length=1, choices=Status.choices, default=Status.PENDING)\r\nAccess your choices like Status.PENDING instead of raw strings.\r\n\r\n5. through for Many-to-Many Customization\r\nNeed extra data in your Many-to-Many relationships? Use through.\r\n\r\nclass Author(models.Model):\r\n    name = models.CharField(max_length=100)\r\n\r\nclass Book(models.Model):\r\n    title = models.CharField(max_length=100)\r\n    authors = models.ManyToManyField(Author, through='Authorship')\r\n\r\nclass Authorship(models.Model):\r\n    author = models.ForeignKey(Author, on_delete=models.CASCADE)\r\n    book = models.ForeignKey(Book, on_delete=models.CASCADE)\r\n    role = models.CharField(max_length=50)  # e.g., \"Co-Author\", \"Editor\"\r\nThis allows you to track additional details about the relationship.\r\n\r\n6. Field-Level Permissions with editable=False\r\nPrevent direct editing in admin while still allowing updates programmatically.\r\n\r\nclass Order(models.Model):\r\n    total_price = models.DecimalField(max_digits=10, decimal_places=2, editable=False)\r\nYou can still update total_price in your code but not in the admin.\r\n\r\n7. Custom File Upload Paths\r\nOrganize uploaded files dynamically with upload_to.\r\n\r\ndef upload_to(instance, filename):\r\n    return f\"uploads/{instance.user.id}/{filename}\"\r\n\r\nclass Profile(models.Model):\r\n    user = models.OneToOneField('auth.User', on_delete=models.CASCADE)\r\n    avatar = models.ImageField(upload_to=upload_to)\r\nUploaded files are neatly stored based on the user’s ID.\r\n\r\n8. Using Property Fields in Models\r\nDjango models can include computed properties.\r\n\r\nclass Employee(models.Model):\r\n    first_name = models.CharField(max_length=50)\r\n    last_name = models.CharField(max_length=50)\r\n\r\n    @property\r\n    def full_name(self):\r\n        return f\"{self.first_name} {self.last_name}\"\r\nAccess it like a field: employee.full_name.\r\n\r\n9. Auto-Setting Fields with save()\r\nCustomize field behavior by overriding save().\r\n\r\nclass Article(models.Model):\r\n    title = models.CharField(max_length=100)\r\n    slug = models.SlugField(unique=True, blank=True)\r\n\r\n    def save(self, *args, **kwargs):\r\n        if not self.slug:\r\n            self.slug = self.title.lower().replace(' ', '-')\r\n        super().save(*args, **kwargs)\r\nAutomatically generate slugs from titles if not provided.\r\n\r\n10. Soft Deletes with is_archived\r\nInstead of deleting records, archive them.\r\n\r\nclass BaseModel(models.Model):\r\n    is_archived = models.BooleanField(default=False)\r\n\r\n    def delete(self, *args, **kwargs):\r\n        self.is_archived = True\r\n        self.save()\r\n\r\n    class Meta:\r\n        abstract = True\r\nYour data stays safe while appearing “deleted” to the user.\r\n\r\nConclusion:\r\nDjango’s model system is powerful, and these tricks can help you write cleaner, more efficient code. Which of these tricks are you already using? What’s your favorite?",
+        "imagem_capa": "artigos/capas/1_ICZHlb9g1XPynuPSCZBQ4Q.webp",
+        "data": "2024-12-18",
+        "url_post": "https://halaamery.medium.com/10-django-model-field-tricks-you-probably-didnt-know-about-fc97f3148bc0"
+    }
+},
+{
+    "model": "artigos.comentario",
+    "pk": 1,
+    "fields": {
+        "post": 1,
+        "nome_comentador": "Manu mathew",
+        "conteudo": "Excellent article !!\r\nFew points to add:\r\n1. CONN_MAX_AGE should be less than DB's IDLE/TIMEOUT. Ex: wait_timeout in Mysql.\r\n2. Keep in mind that the development server creates a new thread for each request it handles, so testing persistent connections in development server would be dificult.\r\n3. Alternatively, Connection pooling can also help instead of persistent connections.",
+        "data": "2022-07-21",
+        "comentario_pai": null
+    }
+},
+{
+    "model": "artigos.comentario",
+    "pk": 2,
+    "fields": {
+        "post": 1,
+        "nome_comentador": "Fhdahmod",
+        "conteudo": "Thanks for your valuable suggestions.",
+        "data": "2020-07-22",
+        "comentario_pai": 1
+    }
+},
+{
+    "model": "artigos.comentario",
+    "pk": 3,
+    "fields": {
+        "post": 3,
+        "nome_comentador": "Ewho Ruth",
+        "conteudo": "worth reading thanks for sharing",
+        "data": "2024-12-22",
+        "comentario_pai": null
+    }
+},
+{
+    "model": "artigos.comentario",
+    "pk": 4,
+    "fields": {
+        "post": 3,
+        "nome_comentador": "Wahevey",
+        "conteudo": "choices with enum saved my life,thank you.",
+        "data": "2024-12-18",
+        "comentario_pai": null
+    }
+},
+{
+    "model": "artigos.rating",
+    "pk": 1,
+    "fields": {
+        "post": 1,
+        "pontuacao": 5
+    }
+},
+{
+    "model": "artigos.rating",
+    "pk": 2,
+    "fields": {
+        "post": 1,
+        "pontuacao": 4
+    }
+},
+{
+    "model": "artigos.rating",
+    "pk": 3,
+    "fields": {
+        "post": 2,
+        "pontuacao": 4
+    }
+},
+{
+    "model": "artigos.rating",
+    "pk": 4,
+    "fields": {
+        "post": 3,
+        "pontuacao": 4
+    }
+},
+{
+    "model": "portfolio.docente",
+    "pk": 3,
+    "fields": {
+        "nome": "Phil Lopes"
+    }
+},
+{
+    "model": "portfolio.docente",
+    "pk": 4,
+    "fields": {
+        "nome": "Fábio Dias"
+    }
+},
+{
+    "model": "portfolio.docente",
+    "pk": 5,
+    "fields": {
+        "nome": "Filipe Pinto"
+    }
+},
+{
+    "model": "portfolio.docente",
+    "pk": 6,
+    "fields": {
+        "nome": "Nélio Codices"
+    }
+},
+{
+    "model": "portfolio.disciplina",
+    "pk": 1,
+    "fields": {
+        "nome": "Realidades Expandidas XR",
+        "ano": 3,
+        "semestre": 2,
+        "link_moodle": "https://moodle.ensinolusofona.pt/course/view.php?id=31380",
+        "link_pagina_ulusofona": "https://www.ulusofona.pt/lisboa/licenciaturas/videojogos/ULHT1075-25114",
+        "docentes": [
+            3,
+            4,
+            5
+        ]
+    }
+},
+{
+    "model": "portfolio.disciplina",
+    "pk": 2,
+    "fields": {
+        "nome": "Desenvolvimento de Jogos Digitais II",
+        "ano": 2,
+        "semestre": 1,
+        "link_moodle": "https://moodle.ensinolusofona.pt/course/view.php?id=23808",
+        "link_pagina_ulusofona": "https://www.ulusofona.pt/lisboa/licenciaturas/videojogos/ULHT1075-17342",
+        "docentes": [
+            6
+        ]
+    }
+},
+{
+    "model": "portfolio.tecnologia",
+    "pk": 1,
+    "fields": {
+        "nome": "Unity",
+        "logotipo": "projetos/logos/unity-logo.png",
+        "link": "https://unity.com/",
+        "descricao": "A cross-platform game engine used for developing real-time 2D and 3D interactive experiences, including games and simulations."
+    }
+},
+{
+    "model": "portfolio.tecnologia",
+    "pk": 2,
+    "fields": {
+        "nome": "XR Interaction Toolkit",
+        "logotipo": "projetos/logos/XRInteractionToolkitlogo.jpg",
+        "link": "https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@3.0/manual/index.html",
+        "descricao": "A Unity package that simplifies the creation of VR and AR experiences by providing ready-to-use interaction systems for tracked input devices."
+    }
+},
+{
+    "model": "portfolio.tecnologia",
+    "pk": 3,
+    "fields": {
+        "nome": "Meta Quest",
+        "logotipo": "projetos/logos/meta_quest-logo.png",
+        "link": "https://www.meta.com/quest/",
+        "descricao": "A standalone virtual reality headset developed by Meta, which can also connect to a PC to run VR applications using Oculus Link or Air Link."
+    }
+},
+{
+    "model": "portfolio.tecnologia",
+    "pk": 4,
+    "fields": {
+        "nome": "C#",
+        "logotipo": "projetos/logos/c-sharp-logo_brandlogos.net_qelpb.png",
+        "link": "https://learn.microsoft.com/en-us/dotnet/csharp/",
+        "descricao": "A programming language used for writing game logic, systems, and interactions in Unity. It supports object-oriented programming and is integrated into the Unity engine through its scripting API."
+    }
+},
+{
+    "model": "portfolio.projeto",
+    "pk": 1,
+    "fields": {
+        "titulo": "Company Roulette",
+        "descricao": "Company Roulette is a Virtual Reality experience developed in Unity 6 as part of the course 'Realidades Expandidas XR' from the Video Games degree at Universidade Lusófona. The game was only tested with the Meta Quest VR headsets. In this intense psychological showdown, you play as an overworked employee who has finally had enough. You march up to the 42nd floor to confront your eccentric billionaire boss and demand a well-deserved raise. But instead of negotiations, you’re met with a twisted game of chance - one where every decision could mean doubling your salary or losing your job on the spot.",
+        "link_itch": "https://manfeldev.itch.io/company-roulette",
+        "link_github": "https://github.com/ManfelDev/Company-Roulette",
+        "link_video": "https://www.youtube.com/watch?v=xmiKX2wyeD0",
+        "aspetos_tecnicos": "Company Roulette was developed in Unity 6 with the XR Interaction Toolkit for VR implementation. The experience was designed for seated play using Meta Quest headsets. It includes hand-tracked, physics-based interactions such as grabbing and loading magazines, inspecting items, and activating objects. Lighting, sound, and animation systems were implemented to support the functionality of each mechanic.",
+        "conceitos_aplicados": "The project applies concepts from interaction design, player agency, and physical interaction in VR. It explores decision-making under uncertainty, the use of risk-reward mechanics, and environmental storytelling to frame player choices. Elements such as turn-based structure, limited resources, and variable outcomes are used to support gameplay decisions.",
+        "disciplina": 1,
+        "tecnologias": [
+            1,
+            2,
+            3,
+            4
+        ]
+    }
+},
+{
+    "model": "portfolio.projeto",
+    "pk": 2,
+    "fields": {
+        "titulo": "Magical Intern",
+        "descricao": "You're just an intern wizard, doing magical stuff in your magical workshop. You accidentally messed up – you dropped the office key into a bubbling cauldron, and now you're locked in! But no worries, because you vaguely remember the master wizard mentioning something about an emergency key. The problem? You can't quite remember what he said. All you know is that he left some clues and puzzles around the room that lead up to the emergency key. Time to channel your inner magic and solve this mystery!",
+        "link_itch": "https://hienadev.itch.io/magical-intern",
+        "link_github": "https://github.com/HienaDev/Magical-Intern",
+        "link_video": "https://www.youtube.com/watch?v=gHgSRf4efn0",
+        "aspetos_tecnicos": "Magical Intern was developed in Unity for Windows. The game features a first-person camera system, object interaction mechanics, and a custom inventory system using a scrollable hotbar. All interactions are mouse and keyboard-based, with logic-driven puzzle integration. Lighting and object physics were used to support puzzle feedback and spatial awareness.",
+        "conceitos_aplicados": "This project explores spatial puzzle design, environmental storytelling, and object-based interaction. It applies principles of intuitive user interface design and player progression through exploration. The puzzles rely on observation, memory, and logical connections between items, reinforcing player engagement through experimentation and discovery.",
+        "disciplina": 2,
+        "tecnologias": [
+            1,
+            4
+        ]
+    }
+},
+{
+    "model": "portfolio.imagemprojeto",
+    "pk": 1,
+    "fields": {
+        "imagem": "projetos/imagens/Ta5Bk5.png",
+        "legenda": null,
+        "projeto": 1
+    }
+},
+{
+    "model": "portfolio.imagemprojeto",
+    "pk": 2,
+    "fields": {
+        "imagem": "projetos/imagens/BN6m7c.png",
+        "legenda": null,
+        "projeto": 1
+    }
+},
+{
+    "model": "portfolio.imagemprojeto",
+    "pk": 3,
+    "fields": {
+        "imagem": "projetos/imagens/FyL1vz.png",
+        "legenda": null,
+        "projeto": 1
+    }
+},
+{
+    "model": "portfolio.imagemprojeto",
+    "pk": 4,
+    "fields": {
+        "imagem": "projetos/imagens/ZdKTFc.png",
+        "legenda": null,
+        "projeto": 2
+    }
+},
+{
+    "model": "portfolio.imagemprojeto",
+    "pk": 5,
+    "fields": {
+        "imagem": "projetos/imagens/AlrQ0J.png",
+        "legenda": null,
+        "projeto": 2
+    }
+},
+{
+    "model": "portfolio.imagemprojeto",
+    "pk": 6,
+    "fields": {
+        "imagem": "projetos/imagens/aPwB9Y.png",
+        "legenda": null,
+        "projeto": 2
+    }
+},
+{
+    "model": "portfolio.fichatecnica",
+    "pk": 1,
+    "fields": {
+        "projeto": 1,
+        "plataforma": "PC (Windows) with Meta Quest VR headset",
+        "duracao_desenvolvimento": "2 Weeks",
+        "equipa": 4
+    }
+},
+{
+    "model": "portfolio.fichatecnica",
+    "pk": 2,
+    "fields": {
+        "projeto": 2,
+        "plataforma": "Unity",
+        "duracao_desenvolvimento": "3 Months",
+        "equipa": 3
+    }
+}
+]

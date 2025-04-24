@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Rafael José | Portfolio{% endblock %}</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Oswald:wght@200..700&family=Pixelify+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        img {
+            max-width: 1200px;
+            max-height: 500px;
+            border-radius: 10px;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        body {
+            font-family: 'Fredoka', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #1f1b24;
+            color: #bb86fc;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 2em;
+            font-weight: 600;
+        }
+
+        nav a {
+            display: inline-block;
+            background-color: #2b2b2b;
+            color: #bb86fc;
+            padding: 10px 15px;
+            margin-left: 10px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #bb86fc;
+            color: white;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px 0;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            min-height: calc(100vh - 160px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 40px;
+        }
+
+        .content a {
+            color: #bb86fc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .content a:hover {
+            text-decoration: underline;
+        }
+
+        .content h2, .content h3 {
+            font-family: 'Oswald', sans-serif;
+            color: #bb86fc;
+            margin-bottom: 5px;
+        }
+
+        .content h2 {
+            font-size: 2.8em;
+            font-weight: 700;
+            color: #bb86fc;
+        }
+
+        .content h3 {
+            font-size: 1.8em;
+        }
+
+        .content p, .content ul {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .content ul {
+            list-style: disc;
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        .content li {
+            margin-bottom: 5px;
+        }
+
+        footer {
+            background-color: #1f1b24;
+            color: #bb86fc;
+            padding: 10px 40px;
+            text-align: left;
+            font-size: 0.9em;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .pixel {
+            font-family: 'Pixelify Sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Rafael José</h1>
+            <nav>
+                <a href="{% url 'portfolio:index' %}">Home</a>
+                <a href="{% url 'portfolio:sobre' %}">Architecture</a>
+                <a href="{% url 'portfolio:interesses' %}">Interests</a>
+                <a href="{% url 'portfolio:projetos' %}">Projects</a>
+                <a href="{% url 'portfolio:tecnologias' %}">Tools</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="content">
+            {% block main %}
+            {% endblock %}
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; {{ data }} Rafael José, ManfelDev.</p>
+    </footer>
+
+</body>
+</html>

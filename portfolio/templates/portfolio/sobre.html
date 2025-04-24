@@ -1,0 +1,95 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block main %}
+
+    <h2>Technical Presentation</h2>
+    <p>This page presents the technical details of the Django web application that powers this portfolio site.</p>
+
+    <h3>Main Technologies Used</h3>
+    <ul>
+        <li><strong>Backend:</strong> Django 5</li>
+        <li><strong>Frontend:</strong> HTML5, CSS3, Django Templates</li>
+        <li><strong>Database:</strong> MySQL</li>
+        <li><strong>Version Control:</strong> Git + GitHub</li>
+        <li><strong>Deployment:</strong> PythonAnywhere</li>
+    </ul>
+
+    <h3>Application Architecture (MVT)</h3>
+    <ul>
+        <li><strong>Model:</strong> Defines the structure of the database, including fields and relationships.</li>
+        <li><strong>View:</strong> Handles HTTP requests, processes data via models, and passes context to templates.</li>
+        <li><strong>Template:</strong> Generates the HTML presentation layer using the context provided by views.</li>
+    </ul>
+    <img src="{% static 'images/MVT_pw.drawio.png' %}" alt="MVT Architecture Diagram">
+
+    <h3>Data Modeling (Entity-Relationship Diagram)</h3>
+    <p>The data is organized using Django models. Below is a summary of the key entities and their relationships:</p>
+    <ul>
+        <li>
+            <strong>Project</strong> – Represents a student-developed game or experience. Each project includes:
+            <ul>
+                <li>A title and description</li>
+                <li>Optional links (Itch.io, GitHub, YouTube)</li>
+                <li>Technical aspects and core concepts</li>
+                <li>A <strong>ForeignKey</strong> to one <em>Discipline</em></li>
+                <li>A <strong>ManyToMany</strong> relation with <em>Technology</em></li>
+                <li>A <strong>OneToOne</strong> relation with <em>TechnicalSheet</em></li>
+                <li>A <strong>OneToMany</strong> relation with <em>ProjectImage</em></li>
+            </ul>
+        </li>
+
+        <li>
+            <strong>Discipline</strong> – Represents a course from the university. It has:
+            <ul>
+                <li>Name, year, semester, and optional Moodle/ULusófona page links</li>
+                <li>A <strong>ManyToMany</strong> relation with <em>Professor</em></li>
+                <li>A <strong>OneToMany</strong> relation with <em>Project</em></li>
+            </ul>
+        </li>
+
+        <li>
+            <strong>Technology</strong> – Each technology used (e.g., Unity, Blender). Includes:
+            <ul>
+                <li>Name, logo, link, and description</li>
+                <li>A <strong>ManyToMany</strong> relation with <em>Project</em></li>
+            </ul>
+        </li>
+
+        <li>
+            <strong>Professor</strong> – Teachers associated with each discipline.
+            <ul>
+                <li>A <strong>ManyToMany</strong> relation with <em>Discipline</em></li>
+            </ul>
+        </li>
+
+        <li>
+            <strong>ProjectImage</strong> – Images illustrating the project.
+            <ul>
+                <li>Each has a <strong>ForeignKey</strong> to one <em>Project</em></li>
+            </ul>
+        </li>
+
+        <li>
+            <strong>TechnicalSheet</strong> – Holds extra metadata (platform, team size, dev duration).
+            <ul>
+                <li>Each is linked via a <strong>OneToOne</strong> to one <em>Project</em></li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>The diagram below visually represents these relationships:</p>
+    <img src="{% static 'images/portfolio.png' %}" alt="Entity-Relationship Diagram (ERD)">
+
+    <h3>Application Structure</h3>
+    <p>The following diagram shows the navigation and structure of the pages in the app:</p>
+    <img src="{% static 'images/site_map_pw.drawio.png' %}" alt="Page Map">
+
+    <h3>GitHub Repository</h3>
+    <p>You can check out the full project source code here:<br>
+        <a href="https://github.com/ManfelDev/ManfelDev" target="_blank">
+            github.com/ManfelDev/ManfelDev
+        </a>
+    </p>
+
+{% endblock %}
