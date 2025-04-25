@@ -35,3 +35,9 @@ def tecnologias_view(request):
         'tecnologias' : Tecnologia.objects.all().order_by('id'),
     }
     return render(request, 'portfolio/tecnologias.html', context)
+
+def cv_view(request):
+    context = {
+        'data' : date.today().year,
+    }
+    return render(request, 'portfolio/cv.html', context)

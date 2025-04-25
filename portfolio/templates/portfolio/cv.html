@@ -1,0 +1,44 @@
+{% extends 'portfolio/base.html' %}
+
+{% load static %}
+
+{% block main %}
+
+    <style>
+        .cv-section a {
+            display: inline-block;
+            background-color: #2b2b2b;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: 0.3s;
+            margin-bottom: 50px;
+        }
+    
+        .cv-section a.last-button {
+            margin-bottom: 0;
+        }
+    
+        .cv-section a:hover {
+            background-color: #bb86fc;
+        }
+    </style>
+    
+    <section class="cv-section">
+        <div style="font-size: 1.2em;">
+            <h2>Curriculum Vitae</h2>
+            <p>You can view or download my CV here:</p>
+            <a href="{% static 'cv/Profile.pdf' %}" target="_blank" class="button-style">View CV</a>
+        </div>
+    
+        <h3>My Projects</h3>
+        <p>I have developed various projects throughout my journey. You can explore them here:</p>
+        <a href="{% url 'portfolio:projetos' %}" class="button-style">View Projects</a>
+    
+        <h3>Technologies I Use</h3>
+        <p>These are the tools and technologies I work with:</p>
+        <a href="{% url 'portfolio:tecnologias' %}" class="button-style last-button">View Tools</a>
+    </section>
+    
+{% endblock %}

@@ -17,14 +17,6 @@
             box-sizing: border-box;
         }
 
-        img {
-            max-width: 1200px;
-            max-height: 500px;
-            border-radius: 10px;
-            display: block;
-            margin-bottom: 20px;
-        }
-
         body {
             font-family: 'Fredoka', sans-serif;
             background-color: #121212;
@@ -90,6 +82,14 @@
             align-items: center;
             text-align: center;
             padding: 0 40px;
+        }
+
+        .content img {
+            max-width: 1200px;
+            max-height: 500px;
+            border-radius: 10px;
+            display: block;
+            margin-bottom: 20px;
         }
 
         .content a {
@@ -161,6 +161,7 @@
                 <a href="{% url 'portfolio:interesses' %}">Interests</a>
                 <a href="{% url 'portfolio:projetos' %}">Projects</a>
                 <a href="{% url 'portfolio:tecnologias' %}">Tools</a>
+                <a href="{% url 'portfolio:cv' %}">CV</a>
             </nav>
         </div>
     </header>
