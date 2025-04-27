@@ -25,9 +25,17 @@ def interesses_view(request):
 def projetos_view(request):
     context = {
         'data' : date.today().year,
-        'projetos' : Projeto.objects.all().order_by('id'),
+        'projetos' : Projeto.objects.all(),
     }
     return render(request, 'portfolio/projetos.html', context)
+
+def projeto_view(request, projeto_id):
+    context = {
+        'data' : date.today().year,
+        'projeto' : Projeto.objects.get(id=projeto_id),
+    }
+    return render(request, 'portfolio/projeto.html', context)
+
 
 def tecnologias_view(request):
     context = {
@@ -35,6 +43,13 @@ def tecnologias_view(request):
         'tecnologias' : Tecnologia.objects.all().order_by('id'),
     }
     return render(request, 'portfolio/tecnologias.html', context)
+
+def tecnologia_view(request, tecnologia_id):
+    context = {
+        'data' : date.today().year,
+        'tecnologia' : Tecnologia.objects.get(id=tecnologia_id),
+    }
+    return render(request, 'portfolio/tecnologia.html', context)
 
 def cv_view(request):
     context = {
