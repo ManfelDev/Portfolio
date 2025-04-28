@@ -87,10 +87,14 @@ class Projeto(models.Model):
         Disciplina,
         on_delete = models.CASCADE,
         related_name = 'projetos',
+        null = True,
+        blank = True,
     )
     tecnologias = models.ManyToManyField(
         Tecnologia,
         related_name = 'projetos',
+        null = True,
+        blank = True,
     )
 
     def __str__(self):

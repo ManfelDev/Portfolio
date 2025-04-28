@@ -1,97 +1,168 @@
 {% extends 'portfolio/base.html' %}
 {% load static %}
 
+{% block extra_styles %}
+<style>
+    .architecture-section {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .architecture-section h3 {
+        font-size: 1.8em;
+        color: #bb86fc;
+        margin: 30px 0 15px 0;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #bb86fc;
+    }
+
+    .architecture-section p {
+        font-size: 1.1em;
+        line-height: 1.6;
+        margin-bottom: 5px;
+    }
+
+    .tech-list {
+        background-color: #1f1f1f;
+        border: 2px solid #bb86fc;
+        border-radius: 15px;
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+
+    .architecture-section img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        border: 2px solid #bb86fc;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .github-link {
+        display: inline-block;
+        background-color: #2b2b2b;
+        color: white !important;
+        padding: 12px 25px;
+        border-radius: 10px;
+        text-decoration: none !important;
+        transition: 0.3s;
+        margin-top: 0px;
+    }
+
+    .github-link:hover {
+        background-color: #bb86fc;
+        transform: translateY(-3px);
+    }
+
+    .intro-text {
+        font-size: 1.2em;
+        background-color: #1f1f1f;
+        border-left: 4px solid #bb86fc;
+        padding: 15px;
+        margin-bottom: 30px;
+        border-radius: 0 10px 10px 0;
+    }
+</style>
+{% endblock %}
+
 {% block main %}
+    <section class="architecture-section">
+        <h2>Technical Presentation</h2>
+        <div class="intro-text">
+            <p>This page presents the technical details of the Django web application that powers this portfolio site.</p>
+        </div>
 
-    <h2>Technical Presentation</h2>
-    <div style="font-size: 1.3em; margin-bottom: 10px;">
-        <p>This page presents the technical details of the Django web application that powers this portfolio site.</p>
-    </div>
-
-    <h3>Main Technologies Used</h3>
-    <ul>
-        <li><strong>Backend:</strong> Django 5</li>
-        <li><strong>Frontend:</strong> HTML5, CSS3, Django Templates</li>
-        <li><strong>Database:</strong> MySQL</li>
-        <li><strong>Version Control:</strong> Git + GitHub</li>
-        <li><strong>Deployment:</strong> PythonAnywhere</li>
-    </ul>
-
-    <h3>Application Architecture (MVT)</h3>
-    <ul>
-        <li><strong>Model:</strong> Defines the structure of the database, including fields and relationships.</li>
-        <li><strong>View:</strong> Handles HTTP requests, processes data via models, and passes context to templates.</li>
-        <li><strong>Template:</strong> Generates the HTML presentation layer using the context provided by views.</li>
-    </ul>
-    <img src="{% static 'images/MVT_pw.drawio.png' %}" alt="MVT Architecture Diagram">
-
-    <h3>Data Modeling (Entity-Relationship Diagram)</h3>
-    <p>The data is organized using Django models. Below is a summary of the key entities and their relationships:</p>
-    <ul>
-        <li>
-            <strong>Project</strong> – Represents a student-developed game or experience. Each project includes:
+        <h3>Main Technologies Used</h3>
+        <div class="tech-list">
             <ul>
-                <li>A title and description</li>
-                <li>Optional links (Itch.io, GitHub, YouTube)</li>
-                <li>Technical aspects and core concepts</li>
-                <li>A <strong>ForeignKey</strong> to one <em>Discipline</em></li>
-                <li>A <strong>ManyToMany</strong> relation with <em>Technology</em></li>
-                <li>A <strong>OneToOne</strong> relation with <em>TechnicalSheet</em></li>
-                <li>A <strong>OneToMany</strong> relation with <em>ProjectImage</em></li>
+                <li><strong>Backend:</strong> Django 5</li>
+                <li><strong>Frontend:</strong> HTML5, CSS3, Django Templates</li>
+                <li><strong>Database:</strong> MySQL</li>
+                <li><strong>Version Control:</strong> Git + GitHub</li>
+                <li><strong>Deployment:</strong> PythonAnywhere</li>
             </ul>
-        </li>
+        </div>
 
-        <li>
-            <strong>Discipline</strong> – Represents a course from the university. It has:
+        <h3>Application Architecture (MVT)</h3>
+        <div class="tech-list">
             <ul>
-                <li>Name, year, semester, and optional Moodle/ULusófona page links</li>
-                <li>A <strong>ManyToMany</strong> relation with <em>Professor</em></li>
-                <li>A <strong>OneToMany</strong> relation with <em>Project</em></li>
+                <li><strong>Model:</strong> Defines the structure of the database, including fields and relationships.</li>
+                <li><strong>View:</strong> Handles HTTP requests, processes data via models, and passes context to templates.</li>
+                <li><strong>Template:</strong> Generates the HTML presentation layer using the context provided by views.</li>
             </ul>
-        </li>
+        </div>
+        <img src="{% static 'images/MVT_pw.drawio.png' %}" alt="MVT Architecture Diagram">
 
-        <li>
-            <strong>Technology</strong> – Each technology used (e.g., Unity, Blender). Includes:
+        <h3>Data Modeling (Entity-Relationship Diagram)</h3>
+        <p>The data is organized using Django models. Below is a summary of the key entities and their relationships:</p>
+
+        <div class="tech-list">
             <ul>
-                <li>Name, logo, link, and description</li>
-                <li>A <strong>ManyToMany</strong> relation with <em>Project</em></li>
+                <li>
+                    <strong>Project</strong> – Represents a student-developed game or experience. Each project includes:
+                    <ul>
+                        <li>A title and description</li>
+                        <li>Optional links (Itch.io, GitHub, YouTube)</li>
+                        <li>Technical aspects and core concepts</li>
+                        <li>A <strong>ForeignKey</strong> to one <em>Discipline</em></li>
+                        <li>A <strong>ManyToMany</strong> relation with <em>Technology</em></li>
+                        <li>A <strong>OneToOne</strong> relation with <em>TechnicalSheet</em></li>
+                        <li>A <strong>OneToMany</strong> relation with <em>ProjectImage</em></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <strong>Discipline</strong> – Represents a course from the university. It has:
+                    <ul>
+                        <li>Name, year, semester, and optional Moodle/ULusófona page links</li>
+                        <li>A <strong>ManyToMany</strong> relation with <em>Professor</em></li>
+                        <li>A <strong>OneToMany</strong> relation with <em>Project</em></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <strong>Technology</strong> – Each technology used (e.g., Unity, Blender). Includes:
+                    <ul>
+                        <li>Name, logo, link, and description</li>
+                        <li>A <strong>ManyToMany</strong> relation with <em>Project</em></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <strong>Professor</strong> – Teachers associated with each discipline.
+                    <ul>
+                        <li>A <strong>ManyToMany</strong> relation with <em>Discipline</em></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <strong>ProjectImage</strong> – Images illustrating the project.
+                    <ul>
+                        <li>Each has a <strong>ForeignKey</strong> to one <em>Project</em></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <strong>TechnicalSheet</strong> – Holds extra metadata (platform, team size, dev duration).
+                    <ul>
+                        <li>Each is linked via a <strong>OneToOne</strong> to one <em>Project</em></li>
+                    </ul>
+                </li>
             </ul>
-        </li>
+        </div>
 
-        <li>
-            <strong>Professor</strong> – Teachers associated with each discipline.
-            <ul>
-                <li>A <strong>ManyToMany</strong> relation with <em>Discipline</em></li>
-            </ul>
-        </li>
+        <p>The diagram below visually represents these relationships:</p>
+        <img src="{% static 'images/portfolio.png' %}" alt="Entity-Relationship Diagram (ERD)">
 
-        <li>
-            <strong>ProjectImage</strong> – Images illustrating the project.
-            <ul>
-                <li>Each has a <strong>ForeignKey</strong> to one <em>Project</em></li>
-            </ul>
-        </li>
+        <h3>Application Structure</h3>
+        <p>The following diagram shows the navigation and structure of the pages in the app:</p>
+        <img src="{% static 'images/site_map_pw.drawio.png' %}" alt="Page Map">
 
-        <li>
-            <strong>TechnicalSheet</strong> – Holds extra metadata (platform, team size, dev duration).
-            <ul>
-                <li>Each is linked via a <strong>OneToOne</strong> to one <em>Project</em></li>
-            </ul>
-        </li>
-    </ul>
-
-    <p>The diagram below visually represents these relationships:</p>
-    <img src="{% static 'images/portfolio.png' %}" alt="Entity-Relationship Diagram (ERD)">
-
-    <h3>Application Structure</h3>
-    <p>The following diagram shows the navigation and structure of the pages in the app:</p>
-    <img src="{% static 'images/site_map_pw.drawio.png' %}" alt="Page Map">
-
-    <h3>GitHub Repository</h3>
-    <p>You can check out the full project source code here:<br>
-        <a href="https://github.com/ManfelDev/Portfolio/" target="_blank">
+        <h3>GitHub Repository</h3>
+        <p>You can check out the full project source code here:</p>
+        <a href="https://github.com/ManfelDev/Portfolio/" target="_blank" class="github-link">
             github.com/ManfelDev/Portfolio/
         </a>
-    </p>
-
+    </section>
 {% endblock %}

@@ -1,16 +1,78 @@
 {% extends 'portfolio/base.html' %}
 
-{% block main %}
+{% block extra_styles %}
+<style>
+    .interests-section {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+    }
 
-    <h2>My Interests</h2>
-    <p>These are some of the areas that drive my curiosity and keep me motivated to grow as a developer:</p>
-    <ul>
-        <li><strong>Gameplay programming</strong> – crafting logic that feels good to play</li>
-        <li><strong>Game AI</strong> – designing behaviors that challenge and surprise players</li>
-        <li><strong>System design</strong> – connecting mechanics in meaningful ways</li>
-        <li><strong>UI/UX</strong> – making sure the player always knows what’s going on</li>
-        <li><strong>Technical problem-solving</strong> – I enjoy debugging and optimizing code</li>
-        <li><strong>Collaborative development</strong> – working with creative people to make great games</li>
-    </ul>
-    
+    .interests-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        margin-top: 30px;
+        text-align: left;
+    }
+
+    .interest-item {
+        background-color: #1f1f1f;
+        border: 2px solid #bb86fc;
+        border-radius: 15px;
+        padding: 20px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .interest-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(187, 134, 252, 0.3);
+    }
+
+    .interest-item strong {
+        color: #bb86fc;
+        display: block;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+</style>
+{% endblock %}
+
+{% block main %}
+    <section class="interests-section">
+        <h2>My Interests</h2>
+        <p>These are some of the areas that drive my curiosity and keep me motivated to grow as a developer:</p>
+
+        <div class="interests-list">
+            <div class="interest-item">
+                <strong>Gameplay Programming</strong>
+                Crafting logic that feels good to play
+            </div>
+
+            <div class="interest-item">
+                <strong>Game AI</strong>
+                Designing behaviors that challenge and surprise players
+            </div>
+
+            <div class="interest-item">
+                <strong>System Design</strong>
+                Connecting mechanics in meaningful ways
+            </div>
+
+            <div class="interest-item">
+                <strong>UI/UX</strong>
+                Making sure the player always knows what's going on
+            </div>
+
+            <div class="interest-item">
+                <strong>Technical Problem-Solving</strong>
+                I enjoy debugging and optimizing code
+            </div>
+
+            <div class="interest-item">
+                <strong>Collaborative Development</strong>
+                Working with creative people to make great games
+            </div>
+        </div>
+    </section>
 {% endblock %}

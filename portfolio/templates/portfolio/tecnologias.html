@@ -1,31 +1,17 @@
 {% extends 'portfolio/base.html' %}
 {% load static %}
-{% block main %}
+
+{% block extra_styles %}
 <style>
-    .tech-grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 30px;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
     .tech-card {
-        background-color: #1f1f1f;
-        border: 2px solid #bb86fc;
-        border-radius: 15px;
         width: 300px;
         padding: 20px;
         text-align: center;
-        transition: transform 0.3s, box-shadow 0.3s;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .tech-card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 10px 20px rgba(187, 134, 252, 0.3);
-    }
+    
     .tech-card-image-wrapper {
         background-color: white;
         border-radius: 10px;
@@ -36,6 +22,7 @@
         align-items: center;
         margin-bottom: 15px;
     }
+    
     .tech-card img {
         max-width: 80%;
         max-height: 80%;
@@ -43,39 +30,33 @@
         display: block;
         margin: 0 auto;
     }
+    
     .tech-card h2 {
         font-size: 1.6em;
         margin-bottom: 10px;
         color: #bb86fc;
     }
+    
     .tech-card p {
         font-size: 1em;
         margin-bottom: 20px;
         color: #e0e0e0;
     }
+    
     .view-details-button {
-        background-color: #2b2b2b !important;
-        color: white !important;
-        padding: 12px 25px !important;
-        border-radius: 10px !important;
-        text-decoration: none !important;
-        font-weight: normal !important;
-        transition: 0.3s !important;
-        display: inline-block !important;
         margin-top: auto !important;
     }
-    .view-details-button:hover {
-        background-color: #bb86fc !important;
-        color: white !important;
-        text-decoration: none !important;
-    }
 </style>
+{% endblock %}
+
+{% block main %}
 <div style="margin-bottom: 20px;">
     <h2>Technologies Used</h2>
 </div>
-<div class="tech-grid">
+
+<div class="grid">
     {% for tecnologia in tecnologias %}
-        <div class="tech-card">
+        <div class="card tech-card">
             <div class="tech-card-image-wrapper">
                 {% if tecnologia.logotipo %}
                     <img src="{{ tecnologia.logotipo.url }}" alt="{{ tecnologia.nome }}">
@@ -85,7 +66,7 @@
             </div>
             <h2>{{ tecnologia.nome }}</h2>
             <p>{{ tecnologia.descricao|truncatechars:80 }}</p>
-            <a href="{% url 'portfolio:tecnologia_path' tecnologia_id=tecnologia.id %}" class="view-details-button">View Details</a>
+            <a href="{% url 'portfolio:tecnologia_path' tecnologia_id=tecnologia.id %}" class="custom-button view-details-button">View Details</a>
         </div>
     {% empty %}
         <p>No technologies available at this time.</p>
