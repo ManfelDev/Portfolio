@@ -1,41 +1,8 @@
 {% extends 'portfolio/base.html' %}
 
+{% load static %}
 {% block extra_styles %}
-<style>
-    .interests-section {
-        max-width: 1200px;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .interests-list {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-        margin-top: 30px;
-        text-align: left;
-    }
-
-    .interest-item {
-        background-color: #1f1f1f;
-        border: 2px solid #bb86fc;
-        border-radius: 15px;
-        padding: 20px;
-        transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .interest-item:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 20px rgba(187, 134, 252, 0.3);
-    }
-
-    .interest-item strong {
-        color: #bb86fc;
-        display: block;
-        font-size: 1.2em;
-        margin-bottom: 10px;
-    }
-</style>
+<link rel = "stylesheet" href = "{% static 'css/interesses.css' %}">
 {% endblock %}
 
 {% block main %}
