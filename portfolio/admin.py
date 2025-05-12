@@ -6,6 +6,7 @@ from .models import Docente, Disciplina, Tecnologia, Projeto, ImagemProjeto, Fic
 class ImagemProjetoInline(admin.TabularInline):
     model = ImagemProjeto
     extra = 3
+    max_num = 3
     fields = ('imagem', 'legenda',)
     show_change_link = True
 

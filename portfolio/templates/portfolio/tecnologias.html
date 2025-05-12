@@ -2,13 +2,12 @@
 
 {% load static %}
 {% block extra_styles %}
-<link rel = "stylesheet" href = "{% static 'css/tecnologias.css' %}">
+<link rel = "stylesheet" href = "{% static 'css_portfolio/tecnologias.css' %}">
 {% endblock %}
 
 {% block main %}
-<div style="margin-bottom: 20px;">
-    <h2>Technologies Used</h2>
-</div>
+
+<h2>Technologies Used</h2>
 
 <div class="grid">
     {% for tecnologia in tecnologias %}
@@ -28,4 +27,9 @@
         <p>No technologies available at this time.</p>
     {% endfor %}
 </div>
+
+<div class="button-wrapper" style="margin-bottom: 0;">
+    <a href="{% url 'portfolio:nova_tecnologia' %}" class="custom-button">Add New Technology</a>
+</div>
+
 {% endblock %}

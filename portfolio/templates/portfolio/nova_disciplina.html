@@ -1,0 +1,33 @@
+{% extends 'portfolio/base.html' %}
+
+{% load static %}
+{% block extra_styles %}
+<link rel="stylesheet" href="{% static 'css_portfolio/form.css' %}">
+{% endblock %}
+
+{% block main %}
+
+<h2>New Course</h2>
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    {% for field in form %}
+        <div class="form-row">
+            {{ field.label_tag }}
+
+            {% if field.name == "docentes" %}
+                {{ field }}
+                <div class="button-wrapper" style="margin-bottom: 0;">
+                    <a href="{% url 'portfolio:novo_docente' %}" class="custom-button">Add New Teacher</a>
+                </div>
+            {% else %}
+                {{ field }}
+            {% endif %}
+        </div>
+    {% endfor %}
+
+    <input type="submit" value="Save">
+</form>
+
+{% endblock %}

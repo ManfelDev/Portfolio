@@ -2,7 +2,7 @@
 
 {% load static %}
 {% block extra_styles %}
-<link rel = "stylesheet" href = "{% static 'css/tecnologia.css' %}">
+<link rel = "stylesheet" href = "{% static 'css_portfolio/tecnologia.css' %}">
 {% endblock %}
 
 {% block main %}
@@ -36,4 +36,9 @@
         </div>
     {% endif %}
 </section>
+
+<div class="button-wrapper" style="margin-top: 40px;">
+    <a href="{% url 'portfolio:edita_tecnologia' tecnologia.id %}" class="custom-button">Edit Technology</a>
+</div>
+
 {% endblock %}

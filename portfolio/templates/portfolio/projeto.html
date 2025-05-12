@@ -2,7 +2,7 @@
 
 {% load static %}
 {% block extra_styles %}
-<link rel = "stylesheet" href = "{% static 'css/projeto.css' %}">
+<link rel = "stylesheet" href = "{% static 'css_portfolio/projeto.css' %}">
 {% endblock %}
 
 {% block main %}
@@ -104,4 +104,9 @@
         {% endif %}
     </div>
 </section>
+
+<div class="button-wrapper" style="margin-top: 40px;">
+    <a href="{% url 'portfolio:edita_projeto' projeto.id %}" class="custom-button">Edit Project</a>
+</div>
+
 {% endblock %}

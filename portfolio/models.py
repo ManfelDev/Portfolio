@@ -78,8 +78,6 @@ class Projeto(models.Model):
         blank = True,
     )
     aspetos_tecnicos = models.TextField(
-        null = True,
-        blank = True,
         verbose_name = "Aspectos técnicos",
     )
     conceitos_aplicados = models.TextField()
