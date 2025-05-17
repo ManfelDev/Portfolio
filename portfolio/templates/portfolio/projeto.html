@@ -105,8 +105,10 @@
     </div>
 </section>
 
-<div class="button-wrapper" style="margin-top: 40px;">
-    <a href="{% url 'portfolio:edita_projeto' projeto.id %}" class="custom-button">Edit Project</a>
-</div>
+{% if request.user.is_authenticated %}
+    <div class="button-wrapper" style="margin-top: 40px;">
+        <a href="{% url 'portfolio:edita_projeto' projeto.id %}" class="custom-button">Edit Project</a>
+    </div>
+{% endif %}
 
 {% endblock %}

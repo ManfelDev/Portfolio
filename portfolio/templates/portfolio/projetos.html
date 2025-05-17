@@ -6,6 +6,7 @@
 {% endblock %}
 
 {% block main %}
+
 <h2>My Projects</h2>
 
 <div class="grid">
@@ -28,8 +29,10 @@
     {% endfor %}
 </div>
 
-<div class="button-wrapper" style="margin-bottom: 0;">
-    <a href="{% url 'portfolio:novo_projeto' %}" class="custom-button">Add New Project</a>
-</div>
+{% if request.user.is_authenticated %}
+    <div class="button-wrapper" style="margin-bottom: 0;">
+        <a href="{% url 'portfolio:novo_projeto' %}" class="custom-button">Add New Project</a>
+    </div>
+{% endif %}
 
 {% endblock %}

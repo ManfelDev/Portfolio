@@ -1,7 +1,7 @@
 form {
-    max-width: 1200;
+    max-width: 1200px;
     width: 80%;
-    margin: 20px auto;
+    margin: 10px auto;
     background-color: #1f1b24;
     padding: 30px 50px;
     border-radius: 20px;
@@ -18,8 +18,11 @@ form label {
     text-align: left;
 }
 form input[type="text"],
+form input[type="email"],
+form input[type="password"],
 form input[type="url"],
 form input[type="file"],
+form input[type="number"],
 form select,
 form textarea {
     width: 100%;
@@ -33,14 +36,12 @@ form textarea {
     transition: border-color 0.3s, box-shadow 0.3s;
     text-align: left;
 }
-
 form input[type="file"] {
     display: block;
     width: 100%;
     padding: 12px;
     text-align: left;
 }
-
 form input[type="file"]::file-selector-button {
     background-color: #bb86fc;
     color: #121212;
@@ -51,7 +52,6 @@ form input[type="file"]::file-selector-button {
     cursor: pointer;
     font-weight: 600;
 }
-
 form textarea {
     min-height: 180px;
     resize: vertical;
@@ -86,27 +86,26 @@ input[type="submit"] {
     padding: 16px 32px;
     border: none;
     border-radius: 12px;
-    font-weight: bold;
-    font-size: 1.05em;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 input[type="submit"]:hover {
     background-color: #a274e1;
 }
-.errorlist {
-    margin-top: 6px;
-    margin-bottom: -4px;
+.error-message {
+    background-color: #2b2b2b;
+    border: 1px solid #c74c4c;
+    padding: 10px 10px;
+    margin-bottom: 0px;
+    border-radius: 12px;
     color: #ffb3b3;
-    font-size: 0.95em;
-    font-style: normal;
-    padding: 0;
-    margin-left: 0;
-    text-align: left;
+    width: 100%;
 }
-.errorlist * {
-    margin: 0;
-    padding: 0;
+.error-message p {
+    margin: 5px 0;
+    font-size: 1.05em;
 }
 .form-row {
     width: 100%;

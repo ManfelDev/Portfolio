@@ -1,6 +1,8 @@
 from django import forms
 from django.forms import inlineformset_factory
 from .models import Projeto, FichaTecnica, ImagemProjeto, Tecnologia, Disciplina, Docente
+from django.contrib.auth.models import User
+from django.contrib.auth.forms import UserCreationForm
 
 class ProjetoForm(forms.ModelForm):
     class Meta:
@@ -81,4 +83,15 @@ class DocenteForm(forms.ModelForm):
 
         labels = {
             'nome': 'Name',
+        }
+
+class RegistoForm(UserCreationForm):
+    class Meta:
+        model = User
+        fields = ['username', 'email', 'first_name', 'last_name', 'password1', 'password2']
+
+        widgets = {
+            'email': forms.EmailInput(attrs={'required': True}),
+            'first_name': forms.TextInput(attrs={'required': True}),
+            'last_name': forms.TextInput(attrs={'required': True}),
         }

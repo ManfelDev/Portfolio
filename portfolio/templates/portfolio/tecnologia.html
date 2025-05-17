@@ -37,8 +37,10 @@
     {% endif %}
 </section>
 
-<div class="button-wrapper" style="margin-top: 40px;">
-    <a href="{% url 'portfolio:edita_tecnologia' tecnologia.id %}" class="custom-button">Edit Technology</a>
-</div>
+{% if request.user.is_authenticated %}
+    <div class="button-wrapper" style="margin-top: 40px;">
+        <a href="{% url 'portfolio:edita_tecnologia' tecnologia.id %}" class="custom-button">Edit Technology</a>
+    </div>
+{% endif %}
 
 {% endblock %}

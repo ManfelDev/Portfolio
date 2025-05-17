@@ -28,8 +28,10 @@
     {% endfor %}
 </div>
 
-<div class="button-wrapper" style="margin-bottom: 0;">
-    <a href="{% url 'portfolio:nova_tecnologia' %}" class="custom-button">Add New Technology</a>
-</div>
+{% if request.user.is_authenticated %}
+    <div class="button-wrapper" style="margin-bottom: 0;">
+        <a href="{% url 'portfolio:nova_tecnologia' %}" class="custom-button">Add New Technology</a>
+    </div>
+{% endif %}
 
 {% endblock %}

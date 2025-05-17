@@ -1,4 +1,6 @@
 from django.db import models
+from django.contrib.auth.models import User
+from django.db import models
 
 # Create your models here.
 
@@ -143,3 +145,17 @@ class FichaTecnica(models.Model):
 
     def __str__(self):
         return f"Ficha Técnica de {self.projeto.titulo}"
+
+class Visitante(models.Model):
+    ip = models.GenericIPAddressField()
+    session_key = models.CharField(max_length=40, unique=True)
+
+    def __str__(self):
+        return f"{self.ip} | {self.session_key}"
+
+class UserProfile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='profile')
+    token = models.CharField(max_length=100, null=True, blank=True)
+
+    def __str__(self):
+        return f"Profile of {self.user.username}"

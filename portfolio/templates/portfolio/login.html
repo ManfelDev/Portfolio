@@ -1,0 +1,39 @@
+{% extends 'portfolio/base.html' %}
+
+{% load static %}
+{% block extra_styles %}
+<link rel="stylesheet" href="{% static 'css_portfolio/form.css' %}">
+{% endblock %}
+
+{% block main %}
+
+<h2>Login</h2>
+
+{% if mensagem %}
+  <strong style="color: yellow;">{{ mensagem }}</strong>
+{% endif %}
+
+<form action="{% url 'portfolio:login' %}" method="post">
+  {% csrf_token %}
+  <div class="form-row">
+    <label for="username">Username</label>
+    <input type="text" name="username" placeholder="Username..">
+  </div>
+
+  <div class="form-row">
+    <label for="password">Password</label>
+    <input type="password" name="password" placeholder="Password..">
+  </div>
+
+  <input type="submit" value="Login">
+</form>
+
+<h3 style="margin-top: 10px ;">Login By Email</h3>
+<form action="{% url 'portfolio:login_magic_link' %}" method="get">
+  <div class="form-row">
+    <input type="email" name="email" placeholder="Enter your email..." required>
+  </div>
+  <input type="submit" value="📧 Send authentication email" style="width: 100%;">
+</form>
+
+{% endblock %}

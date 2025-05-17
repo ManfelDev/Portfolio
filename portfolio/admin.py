@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Docente, Disciplina, Tecnologia, Projeto, ImagemProjeto, FichaTecnica
+from .models import Docente, Disciplina, Tecnologia, Projeto, ImagemProjeto, FichaTecnica, Visitante
 
 # Register your models here.
 
@@ -60,3 +60,8 @@ class TecnologiaAdmin(admin.ModelAdmin):
     search_fields = ('nome',)
 
 admin.site.register(Tecnologia, TecnologiaAdmin)
+
+class VisitanteAdmin(admin.ModelAdmin):
+    list_display = ('ip',)
+
+admin.site.register(Visitante, VisitanteAdmin)

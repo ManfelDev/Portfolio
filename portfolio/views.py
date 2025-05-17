@@ -1,24 +1,32 @@
 from django.shortcuts import render, redirect
+from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.models import User
+from django.contrib.auth.decorators import login_required
 from datetime import date
-from .models import Projeto, Tecnologia
-from .forms import ProjetoForm, FichaTecnicaForm, ImagemProjetoFormSet, TecnologiaForm, DisciplinaForm, DocenteForm
+from .models import Projeto, Tecnologia, UserProfile
+from .forms import ProjetoForm, FichaTecnicaForm, ImagemProjetoFormSet, TecnologiaForm, DisciplinaForm, DocenteForm, RegistoForm
+from .utils import registar_visitante, envia_email
+import secrets
 
 # Create your views here.
 def index_view(request):
     context = {
-        'data' : date.today().year
+        'data': date.today().year,
+        'num_visitantes': registar_visitante(request),
     }
     return render(request, "portfolio/index.html", context)
 
 def sobre_view(request):
     context = {
-        'data' : date.today().year
+        'data' : date.today().year,
+        'num_visitantes': registar_visitante(request),
     }
     return render(request, "portfolio/sobre.html", context)
 
 def interesses_view(request):
     context = {
-        'data' : date.today().year
+        'data' : date.today().year,
+        'num_visitantes': registar_visitante(request),
     }
     return render(request, "portfolio/interesses.html", context)
 
@@ -26,6 +34,7 @@ def projetos_view(request):
     context = {
         'data' : date.today().year,
         'projetos' : Projeto.objects.all(),
+        'num_visitantes': registar_visitante(request),
     }
     return render(request, 'portfolio/projetos.html', context)
 
@@ -33,6 +42,7 @@ def projeto_view(request, projeto_id):
     context = {
         'data' : date.today().year,
         'projeto' : Projeto.objects.get(id=projeto_id),
+        'num_visitantes': registar_visitante(request),
     }
     return render(request, 'portfolio/projeto.html', context)
 
@@ -40,6 +50,7 @@ def tecnologias_view(request):
     context = {
         'data' : date.today().year,
         'tecnologias' : Tecnologia.objects.all().order_by('id'),
+        'num_visitantes': registar_visitante(request),
     }
     return render(request, 'portfolio/tecnologias.html', context)
 
@@ -47,15 +58,20 @@ def tecnologia_view(request, tecnologia_id):
     context = {
         'data' : date.today().year,
         'tecnologia' : Tecnologia.objects.get(id=tecnologia_id),
+        'num_visitantes': registar_visitante(request),
     }
     return render(request, 'portfolio/tecnologia.html', context)
 
 def cv_view(request):
+    registar_visitante(request)
+
     context = {
         'data' : date.today().year,
+        'num_visitantes': registar_visitante(request),
     }
     return render(request, 'portfolio/cv.html', context)
 
+@login_required
 def novo_projeto_view(request):
     if request.method == 'POST':
         projeto_form = ProjetoForm(request.POST, request.FILES)
@@ -81,10 +97,12 @@ def novo_projeto_view(request):
         'form': projeto_form,
         'ficha_form': ficha_form,
         'imagens': imagem_formset,
-        'data': date.today().year
+        'data': date.today().year,
+        'num_visitantes': registar_visitante(request),
     }
     return render(request, 'portfolio/novo_projeto.html', context)
 
+@login_required
 def nova_tecnologia_view(request):
     if request.method == 'POST':
         form = TecnologiaForm(request.POST, request.FILES)
@@ -98,10 +116,12 @@ def nova_tecnologia_view(request):
 
     context = {
         'form': form,
-        'data': date.today().year
+        'data': date.today().year,
+        'num_visitantes': registar_visitante(request),
     }
     return render(request, 'portfolio/nova_tecnologia.html', context)
 
+@login_required
 def nova_disciplina_view(request):
     if request.method == 'POST':
         form = DisciplinaForm(request.POST, request.FILES)
@@ -115,10 +135,12 @@ def nova_disciplina_view(request):
 
     context = {
         'form': form,
-        'data': date.today().year
+        'data': date.today().year,
+        'num_visitantes': registar_visitante(request),
     }
     return render(request, 'portfolio/nova_disciplina.html', context)
 
+@login_required
 def novo_docente_view(request):
     if request.method == 'POST':
         form = DocenteForm(request.POST, request.FILES)
@@ -132,12 +154,12 @@ def novo_docente_view(request):
 
     context = {
         'form': form,
-        'data': date.today().year
+        'data': date.today().year,
+        'num_visitantes': registar_visitante(request),
     }
     return render(request, 'portfolio/novo_docente.html', context)
 
-from django.contrib import messages  # Adicione se ainda não estiver no topo
-
+@login_required
 def edita_projeto_view(request, projeto_id):
     projeto = Projeto.objects.get(id=projeto_id)
     ficha_tecnica = getattr(projeto, 'ficha_tecnica', None)
@@ -161,23 +183,7 @@ def edita_projeto_view(request, projeto_id):
             for obj in imagem_formset.deleted_objects:
                 obj.delete()
 
-            messages.success(request, "Projeto atualizado com sucesso!")
             return redirect('portfolio:projeto_path', projeto_id=projeto.id)
-
-        else:
-            # Mostra no terminal
-            print("Formulários inválidos:")
-            print("Erros do ProjetoForm:", projeto_form.errors)
-            print("Erros do FichaTecnicaForm:", ficha_form.errors)
-            print("Erros do ImagemProjetoFormSet:", imagem_formset.errors)
-
-            # Mostra no template via messages (opcional, se usar messages no template)
-            if projeto_form.errors:
-                messages.error(request, f"Erros no formulário do projeto: {projeto_form.errors.as_text()}")
-            if ficha_form.errors:
-                messages.error(request, f"Erros na ficha técnica: {ficha_form.errors.as_text()}")
-            if imagem_formset.errors:
-                messages.error(request, f"Erros nas imagens: {imagem_formset.errors}")
 
     context = {
         'form': projeto_form,
@@ -185,9 +191,11 @@ def edita_projeto_view(request, projeto_id):
         'imagens': imagem_formset,
         'projeto': projeto,
         'data': date.today().year,
+        'num_visitantes': registar_visitante(request),
     }
     return render(request, 'portfolio/edita_projeto.html', context)
 
+@login_required
 def edita_tecnologia_view(request, tecnologia_id):
     tecnologia = Tecnologia.objects.get(id=tecnologia_id)
 
@@ -202,18 +210,104 @@ def edita_tecnologia_view(request, tecnologia_id):
         'form': form,
         'tecnologia': tecnologia,
         'data': date.today().year,
+        'num_visitantes': registar_visitante(request),
     }
 
     return render(request, 'portfolio/edita_tecnologia.html', context)
 
+@login_required
 def apaga_projeto_view(request, projeto_id):
     projeto = Projeto.objects.get(id=projeto_id)
     projeto.delete()
     return redirect('portfolio:projetos')
 
+@login_required
 def apaga_tecnologia_view(request, tecnologia_id):
     tecnologia = Tecnologia.objects.get(id=tecnologia_id)
     tecnologia.delete()
     return redirect('portfolio:tecnologias')
 
+def registo_view(request):
+    form = RegistoForm(request.POST or None)
 
+    if form.is_valid():
+        form.save()
+        return redirect('portfolio:login')
+
+    context = {
+        'form': form,
+        'data': date.today().year,
+        'num_visitantes': registar_visitante(request),
+    }
+    return render(request, 'portfolio/registo.html', context)
+
+def login_view(request):
+    context = {
+        'data': date.today().year,
+        'num_visitantes': registar_visitante(request),
+    }
+
+    if request.method == "POST":
+        user = authenticate(
+            request,
+            username=request.POST['username'],
+            password=request.POST['password']
+        )
+        if user:
+            login(request, user)
+            return render(request, 'portfolio/index.html', context)
+        else:
+            return render(request, 'portfolio/login.html', {
+                'mensagem':'Invalid credentials'
+            })
+
+    return render(request, 'portfolio/login.html', context)
+
+def logout_view(request):
+    logout(request)
+
+    return redirect('portfolio:index')
+
+def login_magic_link(request):
+    email = request.GET.get('email')
+
+    if User.objects.filter(email=email).exists():
+        user = User.objects.get(email=email)
+        profile, created = UserProfile.objects.get_or_create(user=user)
+
+        profile.token = secrets.token_urlsafe(32)
+        profile.save()
+
+        envia_email(user, email, profile.token)
+
+        return render(request, 'portfolio/login.html', {
+            'mensagem': 'Email sent.'
+        })
+
+    else:
+        return render(request, 'portfolio/login.html', {
+            'mensagem': 'This email address is not registered.'
+        })
+
+def autentica_view(request):
+    token = request.GET.get('token')
+    if token:
+        try:
+            profile = UserProfile.objects.get(token=token)
+            user = profile.user
+            login(request, user)
+            profile.token = None
+            profile.save()
+            return redirect('portfolio:index')
+        except UserProfile.DoesNotExist:
+            return render(request, 'portfolio/login.html', {
+                'mensagem': 'Invalid or expired link.',
+                'data': date.today().year,
+                'num_visitantes': registar_visitante(request),
+            })
+    else:
+        return render(request, 'portfolio/login.html', {
+            'mensagem': 'Token not supplied.',
+            'data': date.today().year,
+            'num_visitantes': registar_visitante(request),
+        })

@@ -20,4 +20,9 @@ urlpatterns = [
     path('tecnologias/<int:tecnologia_id>/edita', views.edita_tecnologia_view,name="edita_tecnologia"),
     path('tecnologias/<int:tecnologia_id>/apaga', views.apaga_tecnologia_view,name="apaga_tecnologia"),
     path('cv/', views.cv_view, name='cv'),
+    path('registo/', views.registo_view, name="registo"),
+    path('login/', views.login_view, name="login"),
+    path('logout/', views.logout_view, name="logout"),
+    path('login-magic/', views.login_magic_link, name='login_magic_link'),
+    path('autentica/', views.autentica_view, name='autentica'),
 ]
