@@ -57,24 +57,6 @@
     color: #bb86fc;
 }
 
-.cv-button {
-    background-color: #2b2b2b;
-    color: white !important;
-    padding: 12px 25px;
-    border-radius: 10px;
-    text-decoration: none !important;
-    transition: 0.3s;
-    display: inline-block;
-    margin-top: 10px;
-}
-
-.cv-button:hover {
-    background-color: #bb86fc;
-    color: white !important;
-    transform: translateY(-3px);
-    text-decoration: none !important;
-}
-
 .main-cv-section {
     width: 100%;
     max-width: 900px;

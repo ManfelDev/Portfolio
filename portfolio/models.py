@@ -1,7 +1,5 @@
 from django.db import models
 from django.contrib.auth.models import User
-from django.db import models
-
 # Create your models here.
 
 class Docente(models.Model):
@@ -93,7 +91,6 @@ class Projeto(models.Model):
     tecnologias = models.ManyToManyField(
         Tecnologia,
         related_name = 'projetos',
-        null = True,
         blank = True,
     )
 

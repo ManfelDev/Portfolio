@@ -2,11 +2,10 @@
 
 {% load static %}
 {% block extra_styles %}
-<link rel = "stylesheet" href = "{% static 'css_portfolio/tecnologias.css' %}">
+<link rel="stylesheet" href="{% static 'css_portfolio/tecnologias.css' %}">
 {% endblock %}
 
 {% block main %}
-
 <h2>Technologies Used</h2>
 
 <div class="grid">
@@ -33,5 +32,4 @@
         <a href="{% url 'portfolio:nova_tecnologia' %}" class="custom-button">Add New Technology</a>
     </div>
 {% endif %}
-
 {% endblock %}

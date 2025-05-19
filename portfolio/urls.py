@@ -4,7 +4,7 @@ from . import views
 app_name = 'portfolio'
 
 urlpatterns = [
-    path('index/', views.index_view, name='index'),
+    path('', views.index_view, name='index'),
     path('sobre/', views.sobre_view, name='sobre'),
     path('interesses/', views.interesses_view, name='interesses'),
     path('projetos/', views.projetos_view, name='projetos'),
@@ -20,9 +20,18 @@ urlpatterns = [
     path('tecnologias/<int:tecnologia_id>/edita', views.edita_tecnologia_view,name="edita_tecnologia"),
     path('tecnologias/<int:tecnologia_id>/apaga', views.apaga_tecnologia_view,name="apaga_tecnologia"),
     path('cv/', views.cv_view, name='cv'),
+    # Login
     path('registo/', views.registo_view, name="registo"),
     path('login/', views.login_view, name="login"),
     path('logout/', views.logout_view, name="logout"),
     path('login-magic/', views.login_magic_link, name='login_magic_link'),
     path('autentica/', views.autentica_view, name='autentica'),
+    path('user/', views.user_view, name='user'),
+    # Artigos
+    path('posts/', views.posts_view, name='posts'),
+    path('post/<int:post_id>/', views.post_view, name='post_path'),
+    path('posts/novo', views.novo_post_view, name='novo_post'),
+    path('autor/novo', views.novo_autor_view, name='novo_autor'),
+    path('post/<int:post_id>/edita', views.edita_post_view, name='edita_post'),
+    path('post/<int:post_id>/apaga', views.apaga_post_view, name='apaga_post'),
 ]

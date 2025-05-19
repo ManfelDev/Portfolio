@@ -6,8 +6,9 @@
 {% endblock %}
 
 {% block main %}
-<h2 style="text-align: left;">Register</h2>
-<form method="post">
+<h2>New Post</h2>
+
+<form method="post" enctype="multipart/form-data">
     {% csrf_token %}
 
     {% if form.errors %}
@@ -31,12 +32,6 @@
         </div>
     {% endfor %}
 
-    <div class="button-wrapper" style="margin-bottom: 0px;">
-        <input type="submit" value="Create">
-    </div>
+    <input type="submit" value="Save" class="custom-button">
 </form>
-
-<div style="margin-top: 20px;">
-    <a href="{% url 'portfolio:index' %}" class="custom-button">Cancel</a>
-</div>
 {% endblock %}

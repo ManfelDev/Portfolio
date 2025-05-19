@@ -62,6 +62,6 @@ class TecnologiaAdmin(admin.ModelAdmin):
 admin.site.register(Tecnologia, TecnologiaAdmin)
 
 class VisitanteAdmin(admin.ModelAdmin):
-    list_display = ('ip',)
+    list_display = ('ip', 'session_key',)
 
 admin.site.register(Visitante, VisitanteAdmin)

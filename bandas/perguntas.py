@@ -1,4 +1,4 @@
-from bandas.models import *
+from bandas.models import Banda, Album, Musica
 from datetime import timedelta
 
 print('Listar o nome das bandas, ordenadas alfabéticamente')

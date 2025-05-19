@@ -7,8 +7,7 @@
 
 {% block main %}
 
-<h2>Login</h2>
-
+<h3>Login</h3>
 {% if mensagem %}
   <strong style="color: yellow;">{{ mensagem }}</strong>
 {% endif %}
@@ -16,24 +15,33 @@
 <form action="{% url 'portfolio:login' %}" method="post">
   {% csrf_token %}
   <div class="form-row">
-    <label for="username">Username</label>
     <input type="text" name="username" placeholder="Username..">
   </div>
 
   <div class="form-row">
-    <label for="password">Password</label>
     <input type="password" name="password" placeholder="Password..">
   </div>
 
-  <input type="submit" value="Login">
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+    <input type="submit" value="Login">
+    <a href="{% url 'portfolio:registo' %}" class="custom-button">Register</a>
+</div>
 </form>
 
-<h3 style="margin-top: 10px ;">Login By Email</h3>
+<h3 style="margin-top: 10px ;">Login by Email</h3>
 <form action="{% url 'portfolio:login_magic_link' %}" method="get">
   <div class="form-row">
     <input type="email" name="email" placeholder="Enter your email..." required>
   </div>
   <input type="submit" value="📧 Send authentication email" style="width: 100%;">
+</form>
+
+<h3 style="margin-top: 10px ;">Login via Google</h3>
+{% load socialaccount %}
+{% providers_media_js %}
+<form action="{% provider_login_url 'google' %}" method="post">
+  {% csrf_token %}
+  <input type="submit" value="🔐 Login with Google" style="width: 100%;">
 </form>
 
 {% endblock %}

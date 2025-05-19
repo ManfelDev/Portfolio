@@ -24,9 +24,10 @@ header {
 }
 
 .header-content {
+    width: 95%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,20 +35,29 @@ header {
 
 header h1 {
     font-family: 'Oswald', sans-serif;
-    font-size: 2em;
+    font-size: clamp(1.5rem, 2vw, 2rem);
     font-weight: 600;
+    white-space: nowrap;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 8px;
 }
 
 nav a {
     display: inline-block;
     background-color: #2b2b2b;
     color: #bb86fc;
-    padding: 10px 15px;
-    margin-left: 10px;
+    padding: 8px 12px;
     border-radius: 10px;
     text-decoration: none;
     font-weight: 500;
+    font-size: clamp(0.75rem, 1vw, 1rem);
     transition: background-color 0.3s, color 0.3s;
+    white-space: nowrap;
 }
 
 nav a:hover {
@@ -58,9 +68,11 @@ nav a:hover {
 main {
     flex: 1;
     padding: 20px 0;
+    width: 100%;
 }
 
 .content {
+    width: 95%;
     max-width: 1200px;
     margin: 0 auto;
     min-height: calc(100vh - 160px);
@@ -69,11 +81,12 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 40px;
+    padding: 0 20px;
 }
 
 .content img {
     max-width: 100%;
+    height: auto;
     border-radius: 10px;
     display: block;
     margin-bottom: 20px;
@@ -95,18 +108,19 @@ main {
 }
 
 .content h2 {
-    font-size: 2.8em;
+    font-size: clamp(2rem, 3vw, 2.8rem);
     font-weight: 700;
     color: #bb86fc;
 }
 
 .content h3 {
-    font-size: 1.8em;
+    font-size: clamp(1.4rem, 2vw, 1.8rem);
 }
 
 .content p, .content ul {
     line-height: 1.6;
     margin-bottom: 10px;
+    font-size: clamp(1rem, 1.1vw, 1.1rem);
 }
 
 .content ul {
@@ -122,9 +136,13 @@ main {
 footer {
     background-color: #1f1b24;
     color: #bb86fc;
-    padding: 10px 40px;
-    text-align: left;
-    font-size: 0.9em;
+    padding: 10px 20px;
+    font-size: clamp(0.8rem, 0.9vw, 0.9rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 footer p {
@@ -142,6 +160,8 @@ footer p {
     border-radius: 15px;
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%;
+    max-width: 350px;
 }
 
 .card:hover {
@@ -173,6 +193,7 @@ footer p {
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -190,4 +211,28 @@ footer p {
     margin: 20px 0;
     display: flex;
     justify-content: center;
+}
+
+/* Media Queries for different screen sizes */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+    
+    nav {
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .content {
+        padding: 0 15px;
+    }
+}
+
+@media (min-width: 1921px) {
+    .header-content, .content, .grid, .section-container {
+        max-width: 1400px;
+    }
 }

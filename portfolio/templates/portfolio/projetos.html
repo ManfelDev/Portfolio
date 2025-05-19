@@ -2,11 +2,10 @@
 
 {% load static %}
 {% block extra_styles %}
-<link rel = "stylesheet" href = "{% static 'css_portfolio/projetos.css' %}">
+<link rel="stylesheet" href="{% static 'css_portfolio/projetos.css' %}">
 {% endblock %}
 
 {% block main %}
-
 <h2>My Projects</h2>
 
 <div class="grid">
@@ -34,5 +33,4 @@
         <a href="{% url 'portfolio:novo_projeto' %}" class="custom-button">Add New Project</a>
     </div>
 {% endif %}
-
 {% endblock %}

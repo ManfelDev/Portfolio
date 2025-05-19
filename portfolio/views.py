@@ -6,6 +6,7 @@ from datetime import date
 from .models import Projeto, Tecnologia, UserProfile
 from .forms import ProjetoForm, FichaTecnicaForm, ImagemProjetoFormSet, TecnologiaForm, DisciplinaForm, DocenteForm, RegistoForm
 from .utils import registar_visitante, envia_email
+from django.db.models import Avg
 import secrets
 
 # Create your views here.
@@ -63,8 +64,6 @@ def tecnologia_view(request, tecnologia_id):
     return render(request, 'portfolio/tecnologia.html', context)
 
 def cv_view(request):
-    registar_visitante(request)
-
     context = {
         'data' : date.today().year,
         'num_visitantes': registar_visitante(request),
@@ -227,6 +226,8 @@ def apaga_tecnologia_view(request, tecnologia_id):
     tecnologia.delete()
     return redirect('portfolio:tecnologias')
 
+#################################### Login ########################################
+
 def registo_view(request):
     form = RegistoForm(request.POST or None)
 
@@ -241,25 +242,35 @@ def registo_view(request):
     }
     return render(request, 'portfolio/registo.html', context)
 
+@login_required
+def user_view(request):
+    context = {
+        'data': date.today().year,
+        'num_visitantes': registar_visitante(request),
+    }
+    return render(request, 'portfolio/user.html', context)
+
 def login_view(request):
     context = {
         'data': date.today().year,
         'num_visitantes': registar_visitante(request),
     }
 
+    if request.user.is_authenticated:
+        return render(request, 'portfolio/user.html', context)
+
     if request.method == "POST":
         user = authenticate(
             request,
-            username=request.POST['username'],
-            password=request.POST['password']
+            username=request.POST.get('username'),
+            password=request.POST.get('password')
         )
         if user:
             login(request, user)
             return render(request, 'portfolio/index.html', context)
         else:
-            return render(request, 'portfolio/login.html', {
-                'mensagem':'Invalid credentials'
-            })
+            context['mensagem'] = 'Credenciais inválidas'
+            return render(request, 'portfolio/login.html', context)
 
     return render(request, 'portfolio/login.html', context)
 
@@ -295,10 +306,12 @@ def autentica_view(request):
         try:
             profile = UserProfile.objects.get(token=token)
             user = profile.user
+            user.backend = 'django.contrib.auth.backends.ModelBackend'
             login(request, user)
             profile.token = None
             profile.save()
             return redirect('portfolio:index')
+
         except UserProfile.DoesNotExist:
             return render(request, 'portfolio/login.html', {
                 'mensagem': 'Invalid or expired link.',
@@ -311,3 +324,122 @@ def autentica_view(request):
             'data': date.today().year,
             'num_visitantes': registar_visitante(request),
         })
+
+#################################### Artigos ########################################
+
+from artigos.models import Post
+from artigos.forms import ComentarioForm, RatingForm, PostForm, AutorForm
+
+def posts_view(request):
+    context = {
+        'posts': Post.objects.all().order_by('-data'),
+        'data': date.today().year,
+        'num_visitantes': registar_visitante(request),
+    }
+    return render(request, 'portfolio/posts.html', context)
+
+def post_view(request, post_id):
+    post = Post.objects.get(id=post_id)
+    comentarios = post.comentarios.filter(comentario_pai__isnull=True)
+    ratings = post.ratings.all()
+    comentario_form = ComentarioForm()
+    rating_form = RatingForm()
+
+    if request.method == 'POST':
+        if 'submit_comentario' in request.POST:
+            comentario_form = ComentarioForm(request.POST)
+            if comentario_form.is_valid():
+                comentario = comentario_form.save(commit=False)
+                comentario.post = post
+                comentario.data = date.today()
+                pai_id = request.POST.get('comentario_pai')
+                if pai_id:
+                    comentario.comentario_pai_id = int(pai_id)
+                comentario.save()
+                return redirect('portfolio:post_path', post_id=post.id)
+
+        elif 'submit_rating' in request.POST:
+            rating_form = RatingForm(request.POST)
+            if rating_form.is_valid():
+                rating = rating_form.save(commit=False)
+                rating.post = post
+                rating.save()
+                return redirect('portfolio:post_path', post_id=post.id)
+
+    media_rating = ratings.aggregate(avg=Avg('pontuacao'))['avg'] or 0
+    total_ratings = ratings.count()
+
+    context = {
+        'post': post,
+        'comentarios': comentarios,
+        'ratings': ratings,
+        'media_rating': round(media_rating, 2),
+        'total_ratings': total_ratings,
+        'comentario_form': comentario_form,
+        'rating_form': rating_form,
+        'data': date.today().year,
+        'num_visitantes': registar_visitante(request),
+    }
+
+    return render(request, 'portfolio/post.html', context)
+
+
+@login_required
+def novo_post_view(request):
+    if request.method == 'POST':
+        form = PostForm(request.POST, request.FILES)
+
+        if form.is_valid():
+            form.save()
+            return redirect('portfolio:posts')
+    else:
+        form = PostForm()
+
+    context = {
+        'form': form,
+        'data': date.today().year,
+        'num_visitantes': registar_visitante(request),
+    }
+    return render(request, 'portfolio/novo_post.html', context)
+
+@login_required
+def novo_autor_view(request):
+    if request.method == 'POST':
+        form = AutorForm(request.POST, request.FILES)
+
+        if form.is_valid():
+            form.save()
+            return redirect('portfolio:novo_post')
+    else:
+        form = AutorForm()
+
+    context = {
+        'form': form,
+        'data': date.today().year,
+        'num_visitantes': registar_visitante(request),
+    }
+    return render(request, 'portfolio/novo_autor.html', context)
+
+@login_required
+def edita_post_view(request, post_id):
+    post = Post.objects.get(id=post_id)
+    form = PostForm(request.POST or None, request.FILES or None, instance=post)
+
+    if form.is_valid():
+        form.save()
+        return redirect('portfolio:post_path', post_id=post.id)
+
+    context = {
+        'form': form,
+        'post': post,
+        'data': date.today().year,
+        'num_visitantes': registar_visitante(request),
+    }
+
+    return render(request, 'portfolio/edita_post.html', context)
+
+@login_required
+def apaga_post_view(request, post_id):
+    post = Post.objects.get(id=post_id)
+    post.delete()
+    return redirect('portfolio:posts')

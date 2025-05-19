@@ -22,12 +22,6 @@
     margin: auto;
 }
 
-.button-wrapper {
-    margin: 20px 0;
-    display: flex;
-    justify-content: center;
-}
-
 .tech-description {
     font-size: 1.2em;
     max-width: 900px;

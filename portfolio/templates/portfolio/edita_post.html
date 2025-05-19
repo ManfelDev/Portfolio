@@ -6,8 +6,9 @@
 {% endblock %}
 
 {% block main %}
-<h2 style="text-align: left;">Register</h2>
-<form method="post">
+<h2>Edit Post</h2>
+
+<form method="post" enctype="multipart/form-data" action="{% url 'portfolio:edita_post' post.id %}">
     {% csrf_token %}
 
     {% if form.errors %}
@@ -31,12 +32,10 @@
         </div>
     {% endfor %}
 
-    <div class="button-wrapper" style="margin-bottom: 0px;">
-        <input type="submit" value="Create">
+    <div class="button-wrapper" style="gap: 20px; margin-bottom: 0px;">
+        <input type="submit" value="Save" class="custom-button">
+        <a href="{% url 'portfolio:post_path' post.id %}" class="custom-button">Cancel</a>
+        <a href="{% url 'portfolio:apaga_post' post.id %}" class="custom-button danger-button">Delete Post</a>
     </div>
 </form>
-
-<div style="margin-top: 20px;">
-    <a href="{% url 'portfolio:index' %}" class="custom-button">Cancel</a>
-</div>
 {% endblock %}
