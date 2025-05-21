@@ -1,0 +1,41 @@
+# Python
+*.pyc
+*.pyo
+__pycache__/
+*.pyd
+
+# VS Code / PyCharm
+.vscode/
+.idea/
+
+# Env
+.env
+.venv/
+venv/
+env/
+
+# Django
+db.sqlite3
+*.log
+
+# Static & Media
+/static/
+/staticfiles/
+/media/
+
+# Compiled files
+*.mo
+*.pot
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Coverage / testing
+htmlcov/
+coverage.xml
+.tox/
+.pytest_cache/
+
+# Backup / dump files
+db.json

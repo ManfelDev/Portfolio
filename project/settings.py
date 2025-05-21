@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 import os
+from decouple import config, Csv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,14 +21,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-0dz@5u^ba#7l&gop(-=5a+!6rc3l5a4jt-0%wk=5um=++9ed*$"
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = ['a22202078.pythonanywhere.com']
-
+DEBUG = config('DEBUG', default=False, cast=bool)
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='localhost', cast=Csv())
+SECRET_KEY = config('SECRET_KEY', default='')
 
 # Application definition
 
@@ -120,20 +116,30 @@ WSGI_APPLICATION = "project.wsgi.application"
     }
 }'''
 
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.mysql",
-        "NAME": "a22202078$default",
-        "USER": "a22202078",
-        "PASSWORD": "#MalhaPizzas1012003",
-        "HOST": "a22202078.mysql.pythonanywhere-services.com",
-        "PORT": "3306",
-        'OPTIONS': {
-            'charset': 'utf8mb4',
-            'init_command': "SET sql_mode = 'STRICT_TRANS_TABLES'",
-        },
+DB_ENGINE = config('DB_ENGINE', default='sqlite')
+
+if DB_ENGINE == 'mysql':
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': config('DB_NAME', default='a22202078$default'),
+            'USER': config('DB_USER', default='a22202078'),
+            'PASSWORD': config('DB_PASSWORD', default='m4ntorras1012003'),
+            'HOST': config('DB_HOST', default='a22202078.mysql.pythonanywhere-services.com'),
+            'PORT': config('DB_PORT', default='3306'),
+            'OPTIONS': {
+                'charset': 'utf8mb4',
+                'init_command': "SET sql_mode = 'STRICT_TRANS_TABLES'",
+            },
+        }
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
