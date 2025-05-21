@@ -1,0 +1,81 @@
+[33mcommit 40dde50bc70e50fabbdfb84276d9e0cf4bad111a[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Rafael José <rafaeldavidjose.dev@gmail.com>
+Date:   Wed May 21 10:05:15 2025 +0000
+
+    Add .gitignore and create settings to use a .env
+    
+    :wq
+    :wq
+            eleted:    artigos/__pycache__/urls.cpython-313.pyc
+
+[33mcommit 7a63d225a29724aa515199055f1b895837d796fb[m
+Author: Rafael José <rafaeldavidjose.dev@gmail.com>
+Date:   Mon May 19 15:06:14 2025 +0000
+
+    Remove unsed files
+
+[33mcommit 98394cb4d8a08cabb55500fc13c141ca1d733e5e[m
+Author: Rafael José <rafaeldavidjose.dev@gmail.com>
+Date:   Mon May 19 14:51:59 2025 +0000
+
+    Add Articles and clean up project
+
+[33mcommit 218436b22933c7898037c83e31f194c817e14a54[m
+Author: Rafael José <rafaeldavidjose.dev@gmail.com>
+Date:   Sat May 17 13:09:39 2025 +0000
+
+    Add login system
+
+[33mcommit 3e0adcb733839ddc2624a3ad8e93572c8e3851db[m
+Author: Rafael José <rafaeldavidjose.dev@gmail.com>
+Date:   Mon May 12 18:36:29 2025 +0000
+
+    Change GitHub Link
+
+[33mcommit 439093fd05b3731363c36201f1829fd0a13b68c6[m
+Author: Rafael José <rafaeldavidjose.dev@gmail.com>
+Date:   Mon May 12 18:34:07 2025 +0000
+
+    Add Forms To the Portfolio and Artigos
+
+[33mcommit 6b54f13313167d52cfb70a0ea1f20118bc2a9115[m
+Author: Rafael José <rafaeldavidjose.dev@gmail.com>
+Date:   Wed May 7 07:05:24 2025 +0000
+
+    Remove unsed logos
+
+[33mcommit 633b8df9f797de240b41449d90bb0e13efb70e06[m
+Author: Rafael José <rafaeldavidjose.dev@gmail.com>
+Date:   Mon May 5 15:16:55 2025 +0000
+
+    Organize static files
+
+[33mcommit 16da9987fef72265679b383d87dbc0a5f6b9485c[m
+Author: Rafael José <rafaeldavidjose.dev@gmail.com>
+Date:   Mon Apr 28 02:58:32 2025 +0000
+
+    Update Charts
+
+[33mcommit b12bcb182ad87ae1026c9664c207dc83af0c862c[m
+Author: Rafael José <rafaeldavidjose.dev@gmail.com>
+Date:   Mon Apr 28 02:36:32 2025 +0000
+
+    Update visuals and add more projects
+
+[33mcommit ea6c4ea900f6e751e99b26a627609319af5d4fbc[m
+Author: Rafael José <rafaeldavidjose.dev@gmail.com>
+Date:   Sun Apr 27 21:47:56 2025 +0000
+
+    Add pages for each project and tool
+
+[33mcommit 3c3fad886c8340197f1cf8c40fc12732b9bb87ec[m
+Author: Rafael José <rafaeldavidjose.dev@gmail.com>
+Date:   Fri Apr 25 16:58:37 2025 +0000
+
+    Add CV page
+
+[33mcommit 33cad3ebadbee2964412f9586c12b8e0be34f02e[m
+Author: Rafael José <rafaeldavidjose.dev@gmail.com>
+Date:   Thu Apr 24 22:07:37 2025 +0000
+
+    First commit
